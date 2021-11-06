@@ -14,6 +14,7 @@ import Typography from '@mui/material/Typography';
 import { Link } from 'react-router-dom';
 import * as yup from 'yup';
 import _ from '@lodash';
+import { LayOut } from 'features/common';
 
 const Root = styled('div')(({ theme }) => ({
   '& .Login3-leftSection': {},
@@ -58,6 +59,7 @@ export default function Login3Page() {
   }
 
   return (
+    <LayOut>
     <Root className="flex flex-col flex-auto items-center justify-center flex-shrink-0 p-16 md:p-24">
       <motion.div
         initial={{ opacity: 0, scale: 0.6 }}
@@ -210,6 +212,7 @@ export default function Login3Page() {
         </div>
       </motion.div>
     </Root>
+    </LayOut>
   );
 }
 

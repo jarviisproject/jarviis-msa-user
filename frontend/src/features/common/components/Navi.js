@@ -1,17 +1,19 @@
-import React from "react";
-import {Link} from 'react-router-dom';
+import React from 'react';
+import { Link } from 'react-router-dom'
 import styled from "styled-components";
-const Navi = () => (
+
+export default function Navigation() {
+  
+  return (
     <div>
         <Ul>
-            <Li><Link to='./Home'style={{ textDecoration:'none' }}>Home</Link></Li>
-            <Li><Link to='./UserRegister'style={{ textDecoration:'none' }}>UserRegister</Link></Li>
-            <Li><Link to='./UserLogin'style={{ textDecoration:'none' }}>userLogin</Link></Li>
+            <Li><Link to="/home" style={{textDecoration:'none'}}>Home</Link></Li>
+            <Li><Link to="/users/login"style={{textDecoration:'none'}}>UserLogin</Link></Li>
+            <Li><Link to="/users/register"style={{textDecoration:'none'}}>UserLogin</Link></Li>
         </Ul>
-        </div>
-)
-
-export default Navi
+    </div>
+  );
+}
 
 const Ul = styled.ul`
 background-color: #FFDAB9;
@@ -26,7 +28,4 @@ margin-left: 1em;
 font-size:20px;
 text-align:center;
 display:inline-block;
-
-
 `
-
