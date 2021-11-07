@@ -8,8 +8,9 @@ export default function Navigation() {
     <div>
         <Ul>
             <Li><Link to="/home" style={{textDecoration:'none'}}>Home</Link></Li>
-            <Li><Link to="/users/login"style={{textDecoration:'none'}}>UserLogin</Link></Li>
-            <Li><Link to="/users/register"style={{textDecoration:'none'}}>UserLogin</Link></Li>
+            <Li><Link to="/users/login"style={{textDecoration:'none'}}>로그인</Link></Li>
+            <Li><Link to="/users/register"style={{textDecoration:'none'}}>회원가입</Link></Li>
+            <Li><Link to="/users/dairy"style={{textDecoration:'none'}}>다이어리</Link></Li>
         </Ul>
     </div>
   );
@@ -18,7 +19,8 @@ export default function Navigation() {
 const Ul = styled.ul`
 background-color: #FFDAB9;
 text-decoration:none
-text-align: center;
+text-align: center;=
+
 
 
 `
@@ -28,4 +30,5 @@ margin-left: 1em;
 font-size:20px;
 text-align:center;
 display:inline-block;
+font-family: 'UhBeeRami';
 `

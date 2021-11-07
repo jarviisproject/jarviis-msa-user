@@ -15,6 +15,7 @@ import { Link } from 'react-router-dom';
 import * as yup from 'yup';
 import _ from '@lodash';
 import { LayOut } from 'features/common';
+import "features/common/font/font.css"
 
 const Root = styled('div')(({ theme }) => ({
   '& .Login3-leftSection': {},
@@ -196,8 +197,7 @@ export default function Login3Page() {
                 color="inherit"
                 className="text-32 sm:text-44 font-semibold leading-tight"
               >
-                Welcome <br />
-                to the <br /> JARVIIS!
+              
               </Typography>
             </motion.div>
 

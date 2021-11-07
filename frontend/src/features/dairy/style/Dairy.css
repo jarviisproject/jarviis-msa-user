@@ -1,0 +1,13 @@
+.container {
+    display: subgrid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 400px);
+    justify-items: center;
+
+  }
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
