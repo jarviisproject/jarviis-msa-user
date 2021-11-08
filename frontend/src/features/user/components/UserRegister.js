@@ -15,7 +15,8 @@ import { Link } from 'react-router-dom';
 import * as yup from 'yup';
 import _ from '@lodash';
 import {LayOut} from 'features/common'
-import "features/common/font/font.css"
+import "features/common/font/font.scss"
+import 'features/user/style/UserLayout.scss'
 
 const Root = styled('div')(({ theme }) => ({
   '& .Register3-leftSection': {},
@@ -66,6 +67,7 @@ export default function Register3Page() {
 
   return (
     <LayOut>
+      <div className= 'User-container'>
     <Root className="flex flex-col flex-auto items-center justify-center flex-shrink-0 p-16 md:p-24">
       <motion.div
         initial={{ opacity: 0, scale: 0.6 }}
@@ -82,11 +84,10 @@ export default function Register3Page() {
               animate={{ opacity: 1, transition: { delay: 0.2 } }}
             >
               <div className="flex items-center mb-48">
-                <img className="logo-icon w-48" src="assets/images/logos/fuse.svg" alt="logo" />
+              <img className='login-img'src={require("features/user/images/paper-pencil.png").default}  />
                 <div className="border-l-1 mr-4 w-1 h-40" />
                 <div>
                   <Typography className="text-24 font-semibold logo-text" color="inherit">
-                    FUSE
                   </Typography>
                   <Typography
                     className="text-16 tracking-widest -mt-8 font-700"
@@ -206,7 +207,7 @@ export default function Register3Page() {
 
           <div className="flex flex-col items-center justify-center pb-32">
             <span className="font-normal">Already have an account?</span>
-            <Link className="font-normal" to="/pages/auth/login-3">
+            <Link className="font-normal" to="/users/Login">
               Login
             </Link>
           </div>
@@ -218,28 +219,17 @@ export default function Register3Page() {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0, transition: { delay: 0.2 } }}
             >
-              <Typography
-                color="inherit"
-                className="text-32 sm:text-44 font-semibold leading-tight"
-              >
-                Welcome <br />
-                to the <br /> FUSE React!
-              </Typography>
             </motion.div>
-
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1, transition: { delay: 0.3 } }}
             >
-              <Typography variant="subtitle1" color="inherit" className="mt-32 font-medium">
-                Powerful and professional admin template for Web Applications, CRM, CMS, Admin
-                Panels and more.
-              </Typography>
             </motion.div>
           </div>
         </div>
       </motion.div>
     </Root>
+    </div>
     </LayOut>
   );
 }

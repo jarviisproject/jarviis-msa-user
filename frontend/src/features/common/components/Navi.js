@@ -11,6 +11,7 @@ export default function Navigation() {
             <Li><Link to="/users/login"style={{textDecoration:'none'}}>로그인</Link></Li>
             <Li><Link to="/users/register"style={{textDecoration:'none'}}>회원가입</Link></Li>
             <Li><Link to="/users/dairy"style={{textDecoration:'none'}}>다이어리</Link></Li>
+            <Li><Link to="/users/review"style={{textDecoration:'none'}}>리뷰</Link></Li>
         </Ul>
     </div>
   );

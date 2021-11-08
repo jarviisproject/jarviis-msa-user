@@ -1,8 +1,14 @@
 import React from 'react';
 import styled from 'styled-components'
+import Typography from '@mui/material/Typography';
+import { motion } from 'framer-motion';
+
 const Footer = () => {
     return (
       <footer>
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, transition: { delay: 0.3 } }}>
         <HR/>
         <div class="ft_bottom re">
             <ul class="ft_bottom_address font16">
@@ -23,10 +29,18 @@ const Footer = () => {
                 </div>
             </div>
         </div>
+        </motion.div>
       </footer>
     )
   }
   
+  <Typography
+  color="inherit"
+  className="text-32 sm:text-44 font-semibold leading-tight"
+>
+  Welcome <br />
+  to the <br /> FUSE React!
+</Typography>
   
 const HR = styled.hr`
   border: 1px solid black;

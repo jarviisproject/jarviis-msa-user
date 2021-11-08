@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {Header} from 'features/common';
 import {Footer} from 'features/common';
-import 'features/common/style/LayOutStyle.css'
+import 'features/common/style/LayOutStyle.scss'
 
 
 
