@@ -14,4 +14,4 @@ export { default as Goal } from 'features/review/goal/containers/Goal'
 export {default as Flower} from 'features/review/garden/components/Flower'
 
 //review components
-export {default as Review} from 'features/review/pages/Review'
+export {default as Review} from 'features/review/containers/Review'

@@ -1,0 +1,1 @@
+export {default as AppTasks} from 'features/task/components/AppTasks'

@@ -17,6 +17,7 @@ import _ from '@lodash';
 import {LayOut} from 'features/common'
 import "features/common/font/font.scss"
 import 'features/user/style/UserLayout.scss'
+import { CheckList } from '..';
 
 const Root = styled('div')(({ theme }) => ({
   '& .Register3-leftSection': {},
@@ -31,6 +32,7 @@ const Root = styled('div')(({ theme }) => ({
 }));
 
 /**
+ * 생년월일/나이/핸드폰번호 추가하기. 
  * Form Validation Schema
  */
 const schema = yup.object().shape({
@@ -47,6 +49,8 @@ const schema = yup.object().shape({
 const defaultValues = {
   name: '',
   email: '',
+  phone: '',
+  birth: '',
   password: '',
   passwordConfirm: '',
   acceptTermsConditions: false,
@@ -141,6 +145,42 @@ export default function Register3Page() {
                   />
                 )}
               />
+              
+              <Controller
+                name="phone"
+                control={control}
+                render={({ field }) => (
+                  <TextField
+                    {...field}
+                    className="mb-16"
+                    label="Phone"
+                    type="text"
+                    error={!!errors.phone}
+                    helperText={errors?.phone?.message}
+                    variant="outlined"
+                    required
+                    fullWidth
+                  />
+                )}
+              />
+               
+               <Controller
+                name="birth"
+                control={control}
+                render={({ field }) => (
+                  <TextField
+                    {...field}
+                    className="mb-16"
+                    label="Birth"
+                    type="text"
+                    error={!!errors.birth}
+                    helperText={errors?.birth?.message}
+                    variant="outlined"
+                    required
+                    fullWidth
+                  />
+                )}
+              />
 
               <Controller
                 name="password"
@@ -177,6 +217,7 @@ export default function Register3Page() {
                   />
                 )}
               />
+                <CheckList/>
 
               <Controller
                 name="acceptTermsConditions"
@@ -191,6 +232,7 @@ export default function Register3Page() {
                   </FormControl>
                 )}
               />
+              
 
               <Button
                 variant="contained"
@@ -204,6 +246,8 @@ export default function Register3Page() {
               </Button>
             </form>
           </CardContent>
+          
+          
 
           <div className="flex flex-col items-center justify-center pb-32">
             <span className="font-normal">Already have an account?</span>
@@ -212,6 +256,7 @@ export default function Register3Page() {
             </Link>
           </div>
         </Card>
+      
 
         <div className="Register3-rightSection hidden md:flex flex-1 items-center justify-center p-64">
           <div className="max-w-320">

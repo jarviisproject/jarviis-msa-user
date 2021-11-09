@@ -1,4 +1,5 @@
 import { yupResolver } from '@hookform/resolvers/yup';
+import {useDispatch} from 'react-redux'
 import { styled, darken } from '@mui/material/styles';
 import { motion } from 'framer-motion';
 import { Controller, useForm } from 'react-hook-form';
@@ -18,6 +19,7 @@ import { LayOut } from 'features/common';
 import "features/common/font/font.scss"
 import 'features/common/style/image.scss'
 import 'features/user/style/UserLayout.scss'
+import { login } from 'features/user/reducer/userSlice';
 
 const Root = styled('div')(({ theme }) => ({
   '& .Login3-leftSection': {},
@@ -45,10 +47,15 @@ const schema = yup.object().shape({
 const defaultValues = {
   email: '',
   password: '',
-  remember: true,
+  username: '',
+  name: '',
+  birth: '',
+  address: ''
+  // remember: true,
 };
 
 export default function Login3Page() {
+  const dispatch = useDispatch()
   const { control, formState, handleSubmit, reset } = useForm({
     mode: 'onChange',
     defaultValues,
@@ -56,9 +63,10 @@ export default function Login3Page() {
   });
 
   const { isValid, dirtyFields, errors } = formState;
-
+  
   function onSubmit() {
     reset(defaultValues);
+  
   }
 
   return (
@@ -97,7 +105,7 @@ export default function Login3Page() {
               name="loginForm"
               noValidate
               className="flex flex-col justify-center w-full"
-              onSubmit={handleSubmit(onSubmit)}
+              onSubmit={handleSubmit(async (data) => {await dispatch(login(data))})}
             >
               <Controller
                 name="email"
