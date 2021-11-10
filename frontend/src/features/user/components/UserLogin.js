@@ -50,8 +50,8 @@ const defaultValues = {
   username: '',
   name: '',
   birth: '',
-  address: ''
-  // remember: true,
+  address: '',
+  remember: true,
 };
 
 export default function Login3Page() {
@@ -71,7 +71,7 @@ export default function Login3Page() {
 
   return (
     <LayOut>
-      <div className="User-container">
+     
     <Root className="flex flex-col flex-auto items-center justify-center flex-shrink-0 p-16 md:p-24">
       <motion.div
         initial={{ opacity: 0, scale: 0.6 }}
@@ -150,7 +150,7 @@ export default function Login3Page() {
                   control={control}
                   render={({ field }) => (
                     <FormControl>
-                      <FormControlLabel label="Remember Me" control={<Checkbox {...field} />} />
+                      <FormControlLabel label="Remember Me" control= {<Checkbox {...field} />} />
                     </FormControl>
                   )}
                 />
@@ -220,7 +220,7 @@ export default function Login3Page() {
         </div>
       </motion.div>
     </Root>
-    </div>
+   
     </LayOut>
   );
 }

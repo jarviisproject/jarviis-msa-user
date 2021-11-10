@@ -3,6 +3,7 @@ from rest_framework import status
 from rest_framework.decorators import api_view, parser_classes
 from rest_framework.parsers import JSONParser
 from django.http import JsonResponse
+import icecream as ic
 
 from user.models import User
 from user.serializers import UserSerializer
@@ -15,15 +16,17 @@ def user(request):
     if request.method == 'GET':
         all_users = User.object.all()
         serializer = UserSerializer(all_users, many=True)
-        return JsonResponse(data=serializer,safe=False)
+        return JsonResponse(data=serializer, safe=False)
     elif request.method == 'POST':
-        print('=============ddddd=================')
+        # print('=============ddddd=================')
         new_user = request.data
-        print(new_user)
-        print('=============dsfsdf=================')
+        print(f'><><><><><><><><><><{new_user}')
+        # print('=============dsfsdf=================')
         serializer = UserSerializer(data=new_user)
         print(f'{serializer}')
+        # ic('==============================================')
         if serializer.is_valid():
+            print('*****************************************')
             serializer.save()
             return JsonResponse({'result': f'Welcome,{serializer.data.get("name")}'}, status=201)
         return JsonResponse(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

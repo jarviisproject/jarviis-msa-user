@@ -1,5 +1,4 @@
 .container {
-  display: -ms-grid;
   display: grid;
   -ms-grid-columns: 200px minmax(420px, 1fr);
       grid-template-columns: 200px minmax(420px, 1fr);

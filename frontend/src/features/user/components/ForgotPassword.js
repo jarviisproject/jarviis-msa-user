@@ -10,6 +10,9 @@ import { Link } from 'react-router-dom';
 import * as yup from 'yup';
 import _ from '@lodash';
 import { LayOut } from 'features/common';
+import React, { useCallback, useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { modify } from 'features/user/reducer/userSlice'
 /**
  * Form Validation Schema
  */
@@ -21,12 +24,15 @@ const defaultValues = {
   email: '',
 };
 
+
 function ForgotPasswordPage() {
   const { control, formState, handleSubmit, reset } = useForm({
     mode: 'onChange',
     defaultValues,
     resolver: yupResolver(schema),
   });
+  const dispatch = useDispatch()
+
 
   const { isValid, dirtyFields, errors } = formState;
 
@@ -47,12 +53,11 @@ function ForgotPasswordPage() {
                 Recover your password
               </Typography>
 
-              <form
-                name="recoverForm"
-                noValidate
-                className="flex flex-col justify-center w-full"
-                onSubmit={handleSubmit(onSubmit)}
-              >
+              <form method= 'PUT' onSubmit= {useCallback(
+                e => {
+                  e.preventDefault()
+                  dispatch(modify({...modify}))}
+                )}>
                 <Controller
                   name="email"
                   control={control}
@@ -84,7 +89,7 @@ function ForgotPasswordPage() {
               </form>
 
               <div className="flex flex-col items-center justify-center pt-32 pb-24">
-                <Link className="font-normal" to="/users/Login">
+                <Link className="font-normal" to="/users/login">
                   Go back to login
                 </Link>
               </div>

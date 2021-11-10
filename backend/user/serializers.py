@@ -5,11 +5,10 @@ from .models import User as user
 
 class UserSerializer(serializers.Serializer):
 
-
-    username = serializers.CharField()
     password = serializers.CharField()
-    name = serializers.CharField()
     email = serializers.CharField()
+    name = serializers.CharField()
+    phone = serializers.CharField()
     birth = serializers.CharField()
     address = serializers.CharField()
 
@@ -21,4 +20,4 @@ class UserSerializer(serializers.Serializer):
         return user.objects.create(**validated_data)
 
     def update(self, instance, validated_data):
-        user.objects.filter(pk=instance.username).update(**validated_data)
+        user.objects.filter(pk=instance.user_id).update(**validated_data)

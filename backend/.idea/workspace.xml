@@ -5,13 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e00a79f-9c9a-487b-9364-af3dcff4eaed" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/djangoProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/djangoProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1f0d8d67-2cb0-45ff-9908-26e7f87ead08.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1f0d8d67-2cb0-45ff-9908-26e7f87ead08.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/item/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/item/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/features/common/components/Navi.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/common/components/Navi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/features/user/components/UserLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/user/components/UserLogin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/features/user/components/UserRegister.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/user/components/UserRegister.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/features/user/reducer/userAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/user/reducer/userAPI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/features/user/reducer/userSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/user/reducer/userSlice.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +67,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.project" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -81,10 +93,22 @@
       <workItem from="1636440619865" duration="4465000" />
       <workItem from="1636445271647" duration="939000" />
       <workItem from="1636450165076" duration="8469000" />
+      <workItem from="1636504868731" duration="17047000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

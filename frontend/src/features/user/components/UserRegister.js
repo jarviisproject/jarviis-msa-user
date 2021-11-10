@@ -1,14 +1,11 @@
 import { yupResolver } from '@hookform/resolvers/yup';
 import { styled, darken } from '@mui/material/styles';
-import FormHelperText from '@mui/material/FormHelperText';
+import {useDispatch} from 'react-redux'
 import { motion } from 'framer-motion';
 import { Controller, useForm } from 'react-hook-form';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import Checkbox from '@mui/material/Checkbox';
-import FormControl from '@mui/material/FormControl';
-import FormControlLabel from '@mui/material/FormControlLabel';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import { Link } from 'react-router-dom';
@@ -18,6 +15,7 @@ import {LayOut} from 'features/common'
 import "features/common/font/font.scss"
 import 'features/user/style/UserLayout.scss'
 import { CheckList } from '..';
+import { join , exist} from 'features/user/reducer/userSlice'
 
 const Root = styled('div')(({ theme }) => ({
   '& .Register3-leftSection': {},
@@ -43,7 +41,7 @@ const schema = yup.object().shape({
     .required('Please enter your password.')
     .min(8, 'Password is too short - should be 8 chars minimum.'),
   passwordConfirm: yup.string().oneOf([yup.ref('password'), null], 'Passwords must match'),
-  acceptTermsConditions: yup.boolean().oneOf([true], 'The terms and conditions must be accepted.'),
+
 });
 
 const defaultValues = {
@@ -52,8 +50,7 @@ const defaultValues = {
   phone: '',
   birth: '',
   password: '',
-  passwordConfirm: '',
-  acceptTermsConditions: false,
+  address:'',
 };
 
 export default function Register3Page() {
@@ -62,6 +59,7 @@ export default function Register3Page() {
     defaultValues,
     resolver: yupResolver(schema),
   });
+  const dispatch = useDispatch()
 
   const { isValid, dirtyFields, errors } = formState;
 
@@ -107,7 +105,7 @@ export default function Register3Page() {
               name="registerForm"
               noValidate
               className="flex flex-col justify-center w-full"
-              onSubmit={handleSubmit(onSubmit)}
+              onSubmit={handleSubmit(async (data) => {await dispatch(join({...data,}))})}
             >
               <Controller
                 name="name"
@@ -127,8 +125,10 @@ export default function Register3Page() {
                   />
                 )}
               />
+              
 
               <Controller
+                id = 'email'
                 name="email"
                 control={control}
                 render={({ field }) => (
@@ -145,6 +145,8 @@ export default function Register3Page() {
                   />
                 )}
               />
+               <button onClick={() => dispatch(
+                            exist(document.getElementById('email').value))}>중복체크</button>
               
               <Controller
                 name="phone"
@@ -181,7 +183,23 @@ export default function Register3Page() {
                   />
                 )}
               />
-
+              <Controller
+                name="address"
+                control={control}
+                render={({ field }) => (
+                  <TextField
+                    {...field}
+                    className="mb-16"
+                    label="address"
+                    type="address"
+                    error={!!errors.address}
+                    helperText={errors?.address?.message}
+                    variant="outlined"
+                    required
+                    fullWidth
+                  />
+                )}
+              />
               <Controller
                 name="password"
                 control={control}
@@ -199,41 +217,8 @@ export default function Register3Page() {
                   />
                 )}
               />
-
-              <Controller
-                name="passwordConfirm"
-                control={control}
-                render={({ field }) => (
-                  <TextField
-                    {...field}
-                    className="mb-16"
-                    label="Password (Confirm)"
-                    type="password"
-                    error={!!errors.passwordConfirm}
-                    helperText={errors?.passwordConfirm?.message}
-                    variant="outlined"
-                    required
-                    fullWidth
-                  />
-                )}
-              />
+               
                 <CheckList/>
-
-              <Controller
-                name="acceptTermsConditions"
-                control={control}
-                render={({ field }) => (
-                  <FormControl className="items-center" error={!!errors.acceptTermsConditions}>
-                    <FormControlLabel
-                      label="I read and accept terms and conditions"
-                      control={<Checkbox {...field} />}
-                    />
-                    <FormHelperText>{errors?.acceptTermsConditions?.message}</FormHelperText>
-                  </FormControl>
-                )}
-              />
-              
-
               <Button
                 variant="contained"
                 color="primary"
