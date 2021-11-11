@@ -5,25 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e00a79f-9c9a-487b-9364-af3dcff4eaed" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1f0d8d67-2cb0-45ff-9908-26e7f87ead08.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1f0d8d67-2cb0-45ff-9908-26e7f87ead08.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/item/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/item/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/item/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/features/common/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/common/components/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/features/common/components/LayOut.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/common/components/LayOut.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/features/common/components/Navi.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/common/components/Navi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/features/user/components/UserLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/user/components/UserLogin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/features/user/components/UserRegister.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/user/components/UserRegister.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/features/user/reducer/userAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/user/reducer/userAPI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/features/common/containers/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/common/containers/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/features/common/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/common/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/features/common/style/Button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/common/style/Button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/features/common/style/LayOutStyle.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/common/style/LayOutStyle.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/features/user/reducer/userSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/user/reducer/userSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,5 +106,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

@@ -8,20 +8,7 @@ $ease_out: cubic-bezier(0.165, 0.84, 0.44, 1);
     }
 }
 
-*, *:before, *:after {
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-body{
-  font-size: 1.2rem;
-  font-family: "Open Sans", sans-serif;
-  color: #444;
-  background-color: #fff;
-  margin: 0;
-  padding: 4rem;
-  text-align: center;
-}
+
 .arrow-btn{
   position: relative;
   display: inline-block;

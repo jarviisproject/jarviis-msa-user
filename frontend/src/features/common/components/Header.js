@@ -1,13 +1,13 @@
 import React from 'react';
-import {Navi }from 'features/common';
+import { Navi } from 'features/common';
 
 const Header = () => {
-    return (
-      <><header>
-        <Navi/><br/>
-      </header>
-      </>
-    )
-  }
+  return (
+    <><header>
+      <Navi /><br />
+    </header>
+    </>
+  )
+}
 
-  export default Header
+export default Header
