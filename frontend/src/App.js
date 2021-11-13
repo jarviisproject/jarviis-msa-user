@@ -9,6 +9,7 @@ import { About } from 'features/todo';
 import { Calendar } from 'features/calendar';
 import { AdminLogin, AdminPage } from 'features/admin';
 import { AppTasks } from 'features/task';
+import { Bord } from 'features/board';
 
 //Attempted import error: 'Action' is not exported from 'history'. histroy 버전 5로 업.
 
@@ -32,6 +33,7 @@ const App= () => {
               <Route path='/users/task' element={<AppTasks/>}/>
               <Route path='/users/adminLogin' element={<AdminLogin/>}/>
               <Route path='/users/admin' element={<AdminPage/>}/>
+              <Route path='/users/bord' element={<Bord/>}/>
            
               
           </Routes>

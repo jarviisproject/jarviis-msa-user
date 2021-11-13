@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,iBAAiB,AAAC,CACd,OAAO,CAAE,IAAI,CACb,qBAAqB,CAAE,KAAK,CAAC,WAAY,CACzC,kBAAkB,CAAG,GAAI,CACzB,aAAa,CAAE,MAAM,CACtB",
+    "sources": [
+        "../style/reviewStyle.scss"
+    ],
+    "names": [],
+    "file": "reviewStyle.min.css"
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../style/HistoryStyle.scss"
+    ],
+    "names": [],
+    "file": "HistoryStyle.min.css"
+}

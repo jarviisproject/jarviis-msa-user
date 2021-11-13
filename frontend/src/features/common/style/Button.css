@@ -56,6 +56,8 @@
   display: inline-block;
   padding: 1em 2em;
   border-radius: 0;
+  -ms-flex-line-pack: center;
+      align-content: center;
   color: #b2876f;
   margin-top: 2rem;
   font-weight: bold;

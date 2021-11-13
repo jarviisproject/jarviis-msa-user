@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,WAAW,AAAA,CACP,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,CACf",
+    "sources": [
+        "../style/gridStyle.scss"
+    ],
+    "names": [],
+    "file": "gridStyle.min.css"
+}

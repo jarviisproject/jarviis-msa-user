@@ -16,12 +16,11 @@ const LayOut = (props) => {
   return (
     <div class="wrapper">
       <div class="container">
-        <span class="item1"><Header/></span>
-        <span class="item2"><MyPage/></span>
-        <span class="item3"> {props.children}</span>
-        <span class="item4">4</span>
-        <span class="item5"><a class="gradient-btn" href="#">챗봇자리</a></span>
-        <span class="item6"><Footer/></span>
+        <div class="header"><Header/></div>
+        <div class="menu"><MyPage/></div>
+        <div class="main">{props.children}</div>
+        <div class="item1"><a class="gradient-btn" href="#">챗봇자리</a></div>
+        <div class="footer"><Footer/></div>
       </div>
     </div>
   );

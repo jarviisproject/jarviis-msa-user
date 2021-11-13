@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
-import Typography from '@mui/material/Typography';
 import { motion } from 'framer-motion';
+import 'features/common/style/Footer.scss'
 
 const Footer = () => {
   return (
@@ -36,7 +36,6 @@ const Footer = () => {
 
 
 const HR = styled.hr`
-  border: 1px solid black;
   text-align: center;
 `
 export default Footer
