@@ -1,5 +1,5 @@
 import React from "react";
-import { Carousel, LayOut } from "..";
+import {  LayOut } from "..";
 import styled from "styled-components";
 import "features/common/font/font.scss";
 

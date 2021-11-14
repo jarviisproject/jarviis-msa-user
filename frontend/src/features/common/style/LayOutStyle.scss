@@ -18,6 +18,8 @@ body {
   display: grid;
   justify-items: center;
   align-items: center;
+  justify-items: stretch;
+  align-content: space-evenly;
 }
 .header {
   grid-column: 1 / 4;
