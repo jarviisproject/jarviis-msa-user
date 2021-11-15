@@ -1,6 +1,6 @@
 
 /* Reset CSS */
-li { float: left;  text-decoration: none;  list-style: none;}
+
 a { text-decoration: none; }
 h1,h2,h3,h4,h5,h6 { margin: 0; }
 
@@ -19,6 +19,9 @@ header {
 }
 .gnb li {
   margin: 0 20px;
+  list-style: none;
+  text-decoration: none; 
+  float: left; 
 }
 .search {
   

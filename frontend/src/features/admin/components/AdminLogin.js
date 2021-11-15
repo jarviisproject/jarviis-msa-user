@@ -144,7 +144,7 @@ export default function AdminLogin() {
                 aria-label="LOGIN"
                 disabled={_.isEmpty(dirtyFields) || !isValid}
                 type="button" 
-                onClick={() => window.location.href='/users/admin'}
+                onClick={() => window.location.href='/admin/admin'}
               >
                 Login
               </Button>

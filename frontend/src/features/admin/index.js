@@ -1,5 +1,6 @@
 export {default as AdminLogin} from 'features/admin/components/AdminLogin'
 export {default as AdminPage} from 'features/admin/containers/AdminPage'
+export {default as AdminMenu} from 'features/admin/containers/AdminMenu'
 
 
 export {default as BarChart} from 'features/admin/components/BarChart'

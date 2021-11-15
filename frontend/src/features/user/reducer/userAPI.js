@@ -10,7 +10,7 @@ const join = x => axios.post(`${SERVER}/users/join`, JSON.stringify(x), { header
 const exist = x => axios.get(`${SERVER}/users/exist/${x}`)
 const modify = x => axios.put(`${SERVER}/users/modify/${x}`)//pk로 찾는거
 const remove = x => axios.delete(`${SERVER}/user/delete/${x}`)
-const list = x => axios.get(`${SERVER}/users/list/${x}`)
+const list = x => axios.get(`${SERVER}/users/list/${x}`)//page로 찾는거
 const find = x => axios.get(`${SERVER}/users/find/${x}`)
 
 

@@ -1,1 +1,0 @@
-export {default as Bord} from 'features/board/components/Bord'
