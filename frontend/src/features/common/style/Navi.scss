@@ -24,11 +24,10 @@ header {
   float: left; 
 }
 .search {
-  
   text-align: right;
   margin: auto;
 }
-@media (max-width:1200px) {
+@media (max-width:1900px) {
   header {
     flex-direction: row;
     padding: 20px;
@@ -41,7 +40,7 @@ header {
     text-align: right;
   }
 }
-@media (max-width:1400px) {
+@media (max-width:1700px) {
   header {
     flex-direction: row;
     padding: 20px;

@@ -1,6 +1,6 @@
 import { yupResolver } from '@hookform/resolvers/yup';
 import { styled, darken } from '@mui/material/styles';
-import {useDispatch} from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { motion } from 'framer-motion';
 import { Controller, useForm } from 'react-hook-form';
 import Button from '@mui/material/Button';
@@ -11,11 +11,12 @@ import Typography from '@mui/material/Typography';
 import { Link } from 'react-router-dom';
 import * as yup from 'yup';
 import _ from '@lodash';
-import {LayOut} from 'features/common'
+import { LayOut } from 'features/common'
 import "features/common/font/font.scss"
 import 'features/user/style/UserLayout.scss'
+import "features/user/style/UserRegister.scss"
 import { CheckList } from '..';
-import { join , exist} from 'features/user/reducer/userSlice'
+import { join, exist } from 'features/user/reducer/userSlice'
 
 const Root = styled('div')(({ theme }) => ({
   '& .Register3-leftSection': {},
@@ -50,7 +51,7 @@ const defaultValues = {
   phone: '',
   birth: '',
   password: '',
-  address:'',
+  address: '',
 };
 
 export default function Register3Page() {
@@ -69,197 +70,209 @@ export default function Register3Page() {
 
   return (
     <LayOut>
-      <div className= 'User-container'>
-    <Root className="flex flex-col flex-auto items-center justify-center flex-shrink-0 p-16 md:p-24">
-      <motion.div
-        initial={{ opacity: 0, scale: 0.6 }}
-        animate={{ opacity: 1, scale: 1 }}
-        className="flex w-full max-w-400 md:max-w-3xl rounded-20 shadow-2xl overflow-hidden"
-      >
-        <Card
-          className="Register3-leftSection  flex flex-col w-full max-w-sm items-center justify-center shadow-0"
-          square
-        >
-          <CardContent className="flex flex-col items-center justify-center w-full py-96 max-w-320">
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1, transition: { delay: 0.2 } }}
+        <Root className="User-container">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.6 }}
+            animate={{ opacity: 1, scale: 1 }}
+            className="flex w-full max-w-400 md:max-w-3xl rounded-20 shadow-2xl overflow-hidden"
+          >
+            <Card
+              className="Register3-leftSection  flex flex-col w-full max-w-sm items-center justify-center shadow-0"
+              square
             >
-              <div className="flex items-center mb-48">
-              <img className='login-img'src={require("features/user/images/paper-pencil.png").default}  />
-                <div className="border-l-1 mr-4 w-1 h-40" />
-                <div>
-                  <Typography className="text-24 font-semibold logo-text" color="inherit">
-                  </Typography>
-                  <Typography
-                    className="text-16 tracking-widest -mt-8 font-700"
-                    color="textSecondary"
-                  >
-                    REACT
-                  </Typography>
-                </div>
-              </div>
-            </motion.div>
-
-            <form
-              name="registerForm"
-              noValidate
-              className="flex flex-col justify-center w-full"
-              onSubmit={handleSubmit(async (data) => {await dispatch(join({...data,}))})}
-            >
-              <Controller
-                name="name"
-                control={control}
-                render={({ field }) => (
-                  <TextField
-                    {...field}
-                    className="mb-16"
-                    label="Name"
-                    autoFocus
-                    type="name"
-                    error={!!errors.name}
-                    helperText={errors?.name?.message}
-                    variant="outlined"
-                    required
-                    fullWidth
-                  />
-                )}
-              />
-              
-
-              <Controller
-                id = 'email'
-                name="email"
-                control={control}
-                render={({ field }) => (
-                  <TextField
-                    {...field}
-                    className="mb-16"
-                    label="Email"
-                    type="email"
-                    error={!!errors.email}
-                    helperText={errors?.email?.message}
-                    variant="outlined"
-                    required
-                    fullWidth
-                  />
-                )}
-              />
-               <button onClick={() => dispatch(
-                            exist(document.getElementById('email').value))}>중복체크</button>
-              
-              <Controller
-                name="phone"
-                control={control}
-                render={({ field }) => (
-                  <TextField
-                    {...field}
-                    className="mb-16"
-                    label="Phone"
-                    type="text"
-                    error={!!errors.phone}
-                    helperText={errors?.phone?.message}
-                    variant="outlined"
-                    required
-                    fullWidth
-                  />
-                )}
-              />
-               
-               <Controller
-                name="birth"
-                control={control}
-                render={({ field }) => (
-                  <TextField
-                    {...field}
-                    className="mb-16"
-                    label="Birth"
-                    type="text"
-                    error={!!errors.birth}
-                    helperText={errors?.birth?.message}
-                    variant="outlined"
-                    required
-                    fullWidth
-                  />
-                )}
-              />
-              <Controller
-                name="address"
-                control={control}
-                render={({ field }) => (
-                  <TextField
-                    {...field}
-                    className="mb-16"
-                    label="address"
-                    type="address"
-                    error={!!errors.address}
-                    helperText={errors?.address?.message}
-                    variant="outlined"
-                    required
-                    fullWidth
-                  />
-                )}
-              />
-              <Controller
-                name="password"
-                control={control}
-                render={({ field }) => (
-                  <TextField
-                    {...field}
-                    className="mb-16"
-                    label="Password"
-                    type="password"
-                    error={!!errors.password}
-                    helperText={errors?.password?.message}
-                    variant="outlined"
-                    required
-                    fullWidth
-                  />
-                )}
-              />
-               
+              <CardContent className="flex flex-col items-center justify-center w-full py-96 max-w-320">
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1, transition: { delay: 0.2 } }}
+                >
+                  <div className="flex items-center mb-48">
+                    <img className='login-img' src={require("features/user/images/paper-pencil.png").default} />
+                    <div className="border-l-1 mr-4 w-1 h-40" />
+                    <div>
+                      <Typography className="text-24 font-semibold logo-text" color="inherit">
+                      </Typography>
+                      <Typography
+                        className="text-16 tracking-widest -mt-8 font-700"
+                        color="textSecondary"
+                      >
+                        회원가입
+                      </Typography>
+                    </div>
+                  </div>
+                </motion.div>
                 <CheckList/>
-              <Button
-                variant="contained"
-                color="primary"
-                className="w-full mx-auto mt-16"
-                aria-label="Register"
-                disabled={_.isEmpty(dirtyFields) || !isValid}
-                type="submit"
-              >
-                Create an account
-              </Button>
-            </form>
-          </CardContent>
-          
-          
+                <form
+                  name="registerForm"
+                  noValidate
+                  className="flex flex-col justify-center w-full"
+                  onSubmit={handleSubmit(async (data) => { await dispatch(join({ ...data, })) })}
+                >
+                  <Controller
+                    name="name"
+                    control={control}
+                    render={({ field }) => (
+                      <TextField
+                        {...field}
+                        className="mb-16"
+                        label="Name"
+                        autoFocus
+                        type="name"
+                        error={!!errors.name}
+                        helperText={errors?.name?.message}
+                        variant="outlined"
+                        required
+                        fullWidth
+                      />
+                    )}
+                  />
 
-          <div className="flex flex-col items-center justify-center pb-32">
-            <span className="font-normal">Already have an account?</span>
-            <Link className="font-normal" to="/users/Login">
-              Login
-            </Link>
-          </div>
-        </Card>
-      
 
-        <div className="Register3-rightSection hidden md:flex flex-1 items-center justify-center p-64">
-          <div className="max-w-320">
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0, transition: { delay: 0.2 } }}
-            >
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1, transition: { delay: 0.3 } }}
-            >
-            </motion.div>
-          </div>
-        </div>
-      </motion.div>
-    </Root>
-    </div>
+                  <Controller
+                    id='email'
+                    name="email"
+                    control={control}
+                    render={({ field }) => (
+                      <TextField
+                        {...field}
+                        className="mb-16"
+                        label="Email"
+                        type="email"
+                        error={!!errors.email}
+                        helperText={errors?.email?.message}
+                        variant="outlined"
+                        required
+                        fullWidth
+                      />
+                    )}
+                  />
+                  <button onClick={() => dispatch(
+                    exist(document.getElementById('email').value))}>중복체크</button>
+
+                  <Controller
+                    name="phone"
+                    control={control}
+                    render={({ field }) => (
+                      <TextField
+                        {...field}
+                        className="mb-16"
+                        label="Phone"
+                        type="text"
+                        error={!!errors.phone}
+                        helperText={errors?.phone?.message}
+                        variant="outlined"
+                        required
+                        fullWidth
+                      />
+                    )}
+                  />
+
+                  <Controller
+                    name="birth"
+                    control={control}
+                    render={({ field }) => (
+                      <TextField
+                        {...field}
+                        className="mb-16"
+                        label="Birth"
+                        type="text"
+                        error={!!errors.birth}
+                        helperText={errors?.birth?.message}
+                        variant="outlined"
+                        required
+                        fullWidth
+                      />
+                    )}
+                  />
+                  <Controller
+                    name="address"
+                    control={control}
+                    render={({ field }) => (
+                      <TextField
+                        {...field}
+                        className="mb-16"
+                        label="address"
+                        type="address"
+                        error={!!errors.address}
+                        helperText={errors?.address?.message}
+                        variant="outlined"
+                        fullWidth
+                      />
+                    )}
+                  />
+                  <Controller
+                    name="password"
+                    control={control}
+                    render={({ field }) => (
+                      <TextField
+                        {...field}
+                        className="mb-16"
+                        label="Password"
+                        type="password"
+                        error={!!errors.password}
+                        helperText={errors?.password?.message}
+                        variant="outlined"
+                        required
+                        fullWidth
+                      />
+                    )}
+                  />
+                  <Controller
+                    name="passwordConfirm"
+                    control={control}
+                    render={({ field }) => (
+                      <TextField
+                        {...field}
+                        className="mb-16"
+                        label="passwordConfirm"
+                        type="passwordConfirm"
+                        error={!!errors.password}
+                        helperText={errors?.password?.message}
+                        variant="outlined"
+                        required
+                        fullWidth
+                      />
+                    )}
+                  />
+                    <Button style={{'margin-top' : '50px'}}
+                    variant="contained"
+                    color="primary"
+                    className="w-full mx-auto mt-16"
+                    aria-label="Register"
+                    disabled={_.isEmpty(dirtyFields) || !isValid}
+                    type="submit"
+                  >
+                    Create an account
+                  </Button>
+                </form>
+              </CardContent>
+
+
+
+              <div className="flex flex-col items-center justify-center pb-32">
+                <span className="font-normal">Already have an account?</span>
+                <Link className="font-normal" to="/users/Login">
+                  Login
+                </Link>
+              </div>
+            </Card>
+
+
+            <div className="Register3-rightSection hidden md:flex flex-1 items-center justify-center p-64">
+              <div className="max-w-320">
+                <motion.div
+                  initial={{ opacity: 0, y: 40 }}
+                  animate={{ opacity: 1, y: 0, transition: { delay: 0.2 } }}
+                >
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1, transition: { delay: 0.3 } }}
+                >
+                </motion.div>
+              </div>
+            </div>
+          </motion.div>
+        </Root>
     </LayOut>
   );
 }

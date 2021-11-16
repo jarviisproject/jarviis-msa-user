@@ -17,11 +17,17 @@ const MODIFY = async (x) => {
   const res = await userAPI.modify(x)
   return res.data
 }
+const FIND = async (x) => {
+  const res = await userAPI.find(x)
+  return res.data
+}
 
 export const login = createAsyncThunk('users/login', LOGIN)
 export const join = createAsyncThunk('users/join', JOIN)
 export const exist = createAsyncThunk('users/exist', EXIST)
 export const modify = createAsyncThunk('users/modify', MODIFY)
+export const find = createAsyncThunk('users/find', FIND)
+
 
 const changeNull = ls => {
   for (const i of ls) {
@@ -48,6 +54,7 @@ const userSlice = createSlice({
       state.userState = action.payload
       window.location.href = `/users/login`
     },
+    [find.fulfilled]:(state, {meta, payload}) => {state.userState = payload},
     [exist.fulfilled]: (state, action) => {
       // if(action.payload){window.location.href='/users/join'}
       alert(`사용가능 한 이메일입니다.`)

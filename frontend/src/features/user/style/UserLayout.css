@@ -1,11 +1,8 @@
 .User-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 100px, minmax(420px, 1fr);
-      grid-template-columns: 100px, minmax(420px, 1fr);
-  -ms-grid-rows: 1fr, 1fr;
-      grid-template-rows: 1fr, 1fr;
-  justify-items: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .User-item1 {

@@ -10,7 +10,7 @@ const Footer = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { delay: 0.3 } }}>
         <HR />
-        <div class="ft_bottom re">
+        <div id="foo" class="ft_bottom re">
           <ul class="ft_bottom_address font16">
             <li><span class="bold">jarviis</span> <span class="ft_inline-block">｜</span>서울 강남구 강남대로94길 20, 삼오빌딩(5층 ~ 9층)<span class="ft_inline-block">｜</span> 사업자등록번호 : 000-000-0000</li>
             <li>(주)자비스 짱짱맨<span class="ft_inline-block">｜</span> 문의 : 010-7382-0000 <span class="ft_inline-block">｜</span> 팩스 : 000-0000-000</li>

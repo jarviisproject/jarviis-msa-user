@@ -15,3 +15,6 @@ export {default as Flower} from 'features/review/garden/components/Flower'
 
 //review components
 export {default as Review} from 'features/review/containers/Review'
+
+//review API
+export {default as reviewAPI} from 'features/review/reducer/reviewAPI'

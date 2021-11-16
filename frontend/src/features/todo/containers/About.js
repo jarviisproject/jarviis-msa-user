@@ -8,10 +8,8 @@ export default function About(){
   return (
     <LayOut>
     <Fragment>
-      
         {/* team member */}
         <TeamMemberOne spaceTopClass="pt-95" spaceBottomClass="pb-70" />
-
     </Fragment>
     </LayOut>
   );

@@ -20,7 +20,7 @@ export default function AdminMenu() {
                     
                             </ul>
                             <div class="page" id="p1">
-                                <section class="fa fa-home fa-3x"></section>
+                                <section class="fa fa-home fa-3x"><h1>admin Page</h1></section>
                             </div>
                             <div class="page" id="p2">
                                 <section class="icon"><div class="adminDiv"><BarChart data= {BarData}/></div></section>

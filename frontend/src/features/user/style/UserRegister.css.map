@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "../style/HistoryStyle.scss"
+        "UserRegister.scss"
     ],
     "names": [],
-    "file": "HistoryStyle.min.css"
+    "file": "UserRegister.css"
 }
