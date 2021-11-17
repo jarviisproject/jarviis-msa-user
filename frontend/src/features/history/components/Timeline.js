@@ -9,52 +9,10 @@ export default function Timeline() {
       <TimelineList>
         <TimelineItemContainer>
           <TimelineItem>
-            <Date>2021년 1월 2일</Date>
+            <Date>2021년 1월 2일 //날씨띄우기//</Date> 
             <Title>이동 정보</Title>
             <Contents>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde eos fuga earum deleniti adipisci recusandae
-              a aliquam inventore rem aut sint nobis doloremque, tempora laboriosam, tempore optio beatae reprehenderit
-              distinctio!<br/>
-              <TimelineModify/>
-
-            </Contents>
-          </TimelineItem>
-        </TimelineItemContainer>
-
-        <TimelineItemContainer>
-          <TimelineItem>
-            <Date>2021년 1월 2일</Date>
-            <Title>이동 정보</Title>
-            <Contents>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde eos fuga earum deleniti adipisci recusandae
-              a aliquam inventore rem aut sint nobis doloremque, tempora laboriosam, tempore optio beatae reprehenderit
-              distinctio!<br/>
-              <TimelineModify/>
-            </Contents>
-          </TimelineItem>
-        </TimelineItemContainer>
-
-        <TimelineItemContainer>
-          <TimelineItem>
-            <Date>2021년 1월 3일</Date>
-            <Title>이동 정보</Title>
-            <Contents>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde eos fuga earum deleniti adipisci recusandae
-              a aliquam inventore rem aut sint nobis doloremque, tempora laboriosam, tempore optio beatae reprehenderit
-              distinctio!<br/>
-              <TimelineModify/>
-            </Contents>
-          </TimelineItem>
-        </TimelineItemContainer>
-
-        <TimelineItemContainer>
-          <TimelineItem>
-            <Date>2021년 1월 4일</Date>
-            <Title>결제 정보</Title>
-            <Contents>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde eos fuga earum deleniti adipisci recusandae
-              a aliquam inventore rem aut sint nobis doloremque, tempora laboriosam, tempore optio beatae reprehenderit
-              distinctio!<br/>
+              =================
               <TimelineModify/>
             </Contents>
           </TimelineItem>
@@ -65,20 +23,15 @@ export default function Timeline() {
 };
 
 const Container = styled.div`
-  color: white;
-  max-width: 800px;
-  margin: 40px auto 0;
-  padding: 40px;
-  background: black;
-  box-sizing: border-box;
-`;
+ 
+`
 
 const TimelineList = styled.ul`
   margin: 0;
   padding: 0;
-  border-left: 2px solid dimgray;
+  border-left: 2px solid ;
   list-style: none;
-`;
+`
 
 const TimelineItemContainer = styled.li`
   list-style: none;
@@ -86,7 +39,7 @@ const TimelineItemContainer = styled.li`
 
 const Date = styled.span`
   padding: 4px 12px;
-  background: rgba(105, 105, 105, 0.6);
+  background: wheat;
   color: gray;
   border-radius: 16px;
 `;

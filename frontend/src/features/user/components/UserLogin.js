@@ -145,17 +145,7 @@ export default function Login3Page() {
               />
 
               <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-between">
-                <Controller
-                  name="remember"
-                  control={control}
-                  render={({ field }) => (
-                    <FormControl>
-                      <FormControlLabel label="Remember Me" control= {<Checkbox {...field} />} />
-                    </FormControl>
-                  )}
-                />
-
-                <Link className="font-normal" to="/users/for-got-pwd">
+                <Link className="font-normal" to="/users/removePwd">
                   Forgot Password?
                 </Link>
               </div>
@@ -179,12 +169,9 @@ export default function Login3Page() {
             </div>
 
             <Button variant="outlined" color="primary" size="small" className="w-192 mb-8">
-              Log in with Google
+              Log in with KaKao
             </Button>
 
-            <Button variant="outlined" color="primary" size="small" className="w-192">
-              Log in with Facebook
-            </Button>
           </CardContent>
 
           <div className="flex flex-col items-center justify-center pb-32">

@@ -42,7 +42,8 @@ export default function Diary() {
                 
                     
                     {/* <label><input type="date" id="start" value={dateToString(test)} max={dateToString(today)}/></label> */}
-                    <button onClick={() => setTest(today)}>오늘 바로 가기 </button>
+                    
+                    <button onClick={() => setTest(today)}>오늘 바로 가기 </button><button>수정</button>
                     <table border='1px' style={{width:'100%', margin:'auto', padding:'10em', borderCollapse:'collapse', borderRadius:'30px'}}>
                         <tr>
                             <td style={{width:'15%'}}><img class='diary-img' src={left} onClick={()=> setTest(new Date(test.setDate(test.getDate()-1)))}/></td>
@@ -64,7 +65,9 @@ export default function Diary() {
                         </tr>
                         <tr>
                             <td colSpan='4'><DiaryText>안녕하세오. 안주현이에오 이건 그림일기에오</DiaryText></td>
+                            
                         </tr>
+                        <input type="text"/>
                     </table>
                 
     

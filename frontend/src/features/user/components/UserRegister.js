@@ -100,7 +100,6 @@ export default function Register3Page() {
                     </div>
                   </div>
                 </motion.div>
-                <CheckList/>
                 <form
                   name="registerForm"
                   noValidate

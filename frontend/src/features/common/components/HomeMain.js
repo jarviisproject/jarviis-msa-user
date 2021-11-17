@@ -20,22 +20,22 @@ export default function HomeMain() {
         <Slide right>
           <div>
             <img
-              src={require("features/common/images/me.png").default } /> 팀장 안주현입니다
+              src={require("features/common/images/me.png").default } /> 팀장 안주현입니다 
           </div>
         </Slide>
         <Slide right>
           <div>
             <img
               className="jarviis-img"
-              src={require("features/common/images/Be with you-001.png").default}
-            />
+              src={require("features/common/images/Be with you-001.png").default} 
+            />혜민쓰
           </div>
         </Slide>
         <Slide right>
           <div>
             <img
               src={require("features/common/images/running.gif").default}
-            />
+            /> 인성쓰
           </div>
         </Slide>
       </Carousel>
