@@ -233,7 +233,7 @@ export default function Register3Page() {
                       />
                     )}
                   />
-                    <Button style={{'margin-top' : '50px'}}
+                    <Button style={{'margin-top' : '60px'}}
                     variant="contained"
                     color="primary"
                     className="w-full mx-auto mt-16"

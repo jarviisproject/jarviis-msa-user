@@ -2,7 +2,7 @@ import React from "react";
 import {  LayOut } from "..";
 import styled from "styled-components";
 import "features/common/font/font.scss";
-import Test from "../components/Test";
+import HomeMain from "features/common/components/HomeMain"
 
 
 
@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <LayOut>
       <Main>
-        <Test/>
+        <HomeMain/>
         {/* <img
           className="jarviis-img"
           src={require("features/common/images/Be with you-001.png").default}
