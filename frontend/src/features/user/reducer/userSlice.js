@@ -1,5 +1,6 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { userAPI } from 'features/user';
+import { takeLatest, call, put } from "redux-saga/effects"
 
 const LOGIN = async (x) => {
   const res = await userAPI.login(x)
@@ -35,10 +36,11 @@ const changeNull = ls => {
   }
 }  //모르겠음 ㅎㅎ...
 
+
 const userSlice = createSlice({
   name: 'users',
   initialState: {
-    userState: { username: '', password: '', email: '', name: '', remeber: '', },
+    userState: { username: '', password: '', email: '', birth: '', address: '', phone:'' },
     usersState: [],
     type: '',
     keyword: '',
