@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { LoginPayload } from './userSlice';
-const SERVER = 'http://127.0.0.1:3001/'
+const SERVER = 'http://172.31.96.1:3001/'
 const headers = {
     'Content-Type': 'application/json',
     'Authorization': 'JWT fefege..'
