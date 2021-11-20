@@ -19,7 +19,7 @@ import { LayOut } from 'features/common';
 import "features/common/font/font.scss"
 import 'features/common/style/image.scss'
 import 'features/user/style/UserLayout.scss'
-import { login } from 'features/user/reducer/userSlice';
+import { loginRequest } from '../reducer/userSlice';
 
 const Root = styled('div')(({ theme }) => ({
   '& .Login3-leftSection': {},
@@ -105,7 +105,7 @@ export default function Login3Page() {
               name="loginForm"
               noValidate
               className="flex flex-col justify-center w-full"
-              onSubmit={handleSubmit(async (data) => {await dispatch(login(data))})}
+              onSubmit={handleSubmit(async (data) => {await dispatch(loginRequest(data))})}
             >
               <Controller
                 name="email"

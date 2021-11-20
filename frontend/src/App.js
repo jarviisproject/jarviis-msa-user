@@ -22,9 +22,9 @@ const App= () => {
               <Route path='/' element= {<Home/>}/>
               <Route path='/home' element= {<Home/>}/>
               <Route path='/users/login' element={<UserLogin/>}/>
-              <Route path='/users/removePwd' element={<ForgotPassword/>}/>
-              <Route path='/users/join' element={<UserRegister/>}/>
-              <Route path='/diary/diary' element={<Diary/>}/>
+              {/* <Route path='/users/removePwd' element={<ForgotPassword/>}/> */}
+              {/* <Route path='/users/join' element={<UserRegister/>}/> */}
+              {/* <Route path='/diary/diary' element={<Diary/>}/>
               <Route path='/review/review' element={<Review/>}/>
               <Route path='/history/history' element={<History/>}/>
               <Route path='/users/checkList' element={<CheckList/>}/>
@@ -34,7 +34,7 @@ const App= () => {
               <Route path='/admin/adminLogin' element={<AdminLogin/>}/>
               <Route path='/admin/admin' element={<AdminPage/>}/>
               <Route path='/qna/QnA' element={<QnA/>}/>
-              <Route path='/qna/QnAList' element={<QnaList/>}/>
+              <Route path='/qna/QnAList' element={<QnaList/>}/> */}
            
               
           </Routes>

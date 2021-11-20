@@ -8,7 +8,8 @@ import {Provider} from 'react-redux'
 import 'features/todo/style/style.scss'
 //리덕스와 미들웨어 적용을 위해 필요한 모듈 불러오기
 import {createStore, applyMiddleware} from "redux";
-import rootReducer, {rootSaga} from "./module/index";
+import rootReducer from "./features/user/module/index";
+import rootSaga from 'features/user/module';
 import { composeWithDevTools } from "redux-devtools-extension";
 import createSagaMiddleware from "redux-saga"
 

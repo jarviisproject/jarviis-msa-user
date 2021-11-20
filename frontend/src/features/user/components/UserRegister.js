@@ -16,7 +16,7 @@ import "features/common/font/font.scss"
 import 'features/user/style/UserLayout.scss'
 import "features/user/style/UserRegister.scss"
 import { CheckList } from '..';
-import { join, exist } from 'features/user/reducer/userSlice'
+import { join, exist } from 'features/user/reducer/userSlice/'
 
 const Root = styled('div')(({ theme }) => ({
   '& .Register3-leftSection': {},
