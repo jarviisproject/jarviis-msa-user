@@ -6,9 +6,25 @@ import {
   loginRequest,
   loginFailure,
   loginSuccess,
+  JoinPayload,
+  joinSuccess,
+  joinFailure,
+  joinRequest,
 } from "features/user/reducer/userSlice";
-import { userAPI } from "features/user";
+import { userAPI  } from "features/user";
 
+function* join( action: PayloadAction<JoinPayload>){
+  try{
+    alert("왔니?")
+    const result : UserDataPayload = yield call(
+      userAPI.joinAPI,
+      action.payload
+    );
+    yield put(joinSuccess(result));
+  } catch (error: any){
+    yield put(joinFailure(error));
+  }
+}
 
 function* login(action: PayloadAction<LoginPayload>) {
   try {
@@ -34,4 +50,7 @@ export function* watchLogin() {
   yield takeLatest(loginRequest.type, login);
   // loginRequest에서의 type이 실행되면 login함수가 실행되는데
   // loginRequest의 action이 있으면 그 액션이 login함수의 인자로 들어갑니다.
+}
+export function* watchJoin(){
+  yield takeLatest(joinRequest.type, join);
 }

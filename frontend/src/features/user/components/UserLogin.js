@@ -6,7 +6,6 @@ import { Controller, useForm } from 'react-hook-form';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import Checkbox from '@mui/material/Checkbox';
 import Divider from '@mui/material/Divider';
 import FormControl from '@mui/material/FormControl';
 import FormControlLabel from '@mui/material/FormControlLabel';
@@ -51,7 +50,6 @@ const defaultValues = {
   name: '',
   birth: '',
   address: '',
-  remember: true,
 };
 
 export default function Login3Page() {
@@ -72,28 +70,24 @@ export default function Login3Page() {
   return (
     <LayOut>
      
-    <Root className="flex flex-col flex-auto items-center justify-center flex-shrink-0 p-16 md:p-24">
+    <Root style={{width:"50vh",marginLeft:" 471px",marginTop:"147px"}} >
       <motion.div
         initial={{ opacity: 0, scale: 0.6 }}
         animate={{ opacity: 1, scale: 1 }}
-        className="flex w-full max-w-400 md:max-w-3xl rounded-20 shadow-2xl overflow-hidden"
       >
         <Card
-          className="Login3-leftSection flex flex-col w-full max-w-sm items-center justify-center shadow-0"
           square
         >
-          <CardContent className="flex flex-col items-center justify-center w-full py-96 max-w-320">
+          <CardContent>
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1, transition: { delay: 0.2 } }}
             >
-              <div className="flex items-center mb-48">
+              <div >
                 <img className='login-img'src={require("features/user/images/pencil.png").default}  />
-                <div className="border-l-1 mr-4 w-1 h-40" />
+                <div/>
                 <div>
                   <Typography
-                    className="text-16 tracking-widest -mt-8 font-700"
-                    color="textSecondary"
                   >
                     로그인
                   </Typography>
@@ -102,9 +96,9 @@ export default function Login3Page() {
             </motion.div>
 
             <form
+            
               name="loginForm"
               noValidate
-              className="flex flex-col justify-center w-full"
               onSubmit={handleSubmit(async (data) => {await dispatch(loginRequest(data))})}
             >
               <Controller
@@ -144,7 +138,7 @@ export default function Login3Page() {
                 )}
               />
 
-              <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-between">
+              <div>
                 <Link className="font-normal" to="/users/removePwd">
                   Forgot Password?
                 </Link>
@@ -153,7 +147,6 @@ export default function Login3Page() {
               <Button
                 variant="contained"
                 color="primary"
-                className="w-full mx-auto mt-16"
                 aria-label="LOGIN"
                 disabled={_.isEmpty(dirtyFields) || !isValid}
                 type="submit"
@@ -162,9 +155,9 @@ export default function Login3Page() {
               </Button>
             </form>
 
-            <div className="my-24 flex items-center justify-center">
+            <div>
               <Divider className="w-32" />
-              <span className="mx-8 font-semibold">OR</span>
+              <span style={{font:"bolder"}}>OR</span>
               <Divider className="w-32" />
             </div>
 

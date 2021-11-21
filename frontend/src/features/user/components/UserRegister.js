@@ -16,8 +16,7 @@ import "features/common/font/font.scss"
 import 'features/user/style/UserLayout.scss'
 import "features/user/style/UserRegister.scss"
 import { CheckList } from '..';
-import { join, exist } from 'features/user/reducer/userSlice/'
-
+import { joinRequest } from '../reducer/userSlice';
 const Root = styled('div')(({ theme }) => ({
   '& .Register3-leftSection': {},
 
@@ -70,17 +69,15 @@ export default function Register3Page() {
 
   return (
     <LayOut>
-        <Root className="User-container">
+      <div className="User-container">
           <motion.div
             initial={{ opacity: 0, scale: 0.6 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="flex w-full max-w-400 md:max-w-3xl rounded-20 shadow-2xl overflow-hidden"
           >
             <Card
-              className="Register3-leftSection  flex flex-col w-full max-w-sm items-center justify-center shadow-0"
               square
             >
-              <CardContent className="flex flex-col items-center justify-center w-full py-96 max-w-320">
+              <CardContent >
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1, transition: { delay: 0.2 } }}
@@ -104,7 +101,7 @@ export default function Register3Page() {
                   name="registerForm"
                   noValidate
                   className="flex flex-col justify-center w-full"
-                  onSubmit={handleSubmit(async (data) => { await dispatch(join({ ...data, })) })}
+                  onSubmit={handleSubmit(async (data) => { await dispatch(joinRequest({ ...data, })) })}
                 >
                   <Controller
                     name="name"
@@ -271,7 +268,10 @@ export default function Register3Page() {
               </div>
             </div>
           </motion.div>
-        </Root>
+        </div>
+        <div style={{marginTop: "-586px"}}>
+        <CheckList/>
+        </div>
     </LayOut>
   );
 }

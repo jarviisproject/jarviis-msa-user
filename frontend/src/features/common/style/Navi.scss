@@ -5,10 +5,11 @@ a { text-decoration: none; }
 h1,h2,h3,h4,h5,h6 { margin: 0; }
 
 header {
-  background-color: #fff;
+  background-color: wheat;
   display: flex;
-  padding: 20px;
   font-weight: bold;
+  align-items: center;
+  height: 86px;
   
 }
 
