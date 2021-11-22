@@ -17,24 +17,13 @@ import 'features/user/style/UserLayout.scss'
 import "features/user/style/UserRegister.scss"
 import { CheckList } from '..';
 import { joinRequest } from '../reducer/userSlice';
-const Root = styled('div')(({ theme }) => ({
-  '& .Register3-leftSection': {},
-
-  '& .Register3-rightSection': {
-    background: `linear-gradient(to right, ${theme.palette.primary.dark} 0%, ${darken(
-      theme.palette.primary.dark,
-      0.5
-    )} 100%)`,
-    color: theme.palette.primary.contrastText,
-  },
-}));
 
 /**
  * 생년월일/나이/핸드폰번호 추가하기. 
  * Form Validation Schema
  */
 const schema = yup.object().shape({
-  name: yup.string().required('You must enter your name'),
+  username: yup.string().required('You must enter your name'),
   email: yup.string().email('You must enter a valid email').required('You must enter a email'),
   password: yup
     .string()
@@ -45,7 +34,7 @@ const schema = yup.object().shape({
 });
 
 const defaultValues = {
-  name: '',
+  username: '',
   email: '',
   phone: '',
   birth: '',
@@ -104,7 +93,7 @@ export default function Register3Page() {
                   onSubmit={handleSubmit(async (data) => { await dispatch(joinRequest({ ...data, })) })}
                 >
                   <Controller
-                    name="name"
+                    name="username"
                     control={control}
                     render={({ field }) => (
                       <TextField
@@ -112,9 +101,9 @@ export default function Register3Page() {
                         className="mb-16"
                         label="Name"
                         autoFocus
-                        type="name"
-                        error={!!errors.name}
-                        helperText={errors?.name?.message}
+                        type="username"
+                        error={!!errors.username}
+                        helperText={errors?.username?.message}
                         variant="outlined"
                         required
                         fullWidth
@@ -269,7 +258,7 @@ export default function Register3Page() {
             </div>
           </motion.div>
         </div>
-        <div style={{marginTop: "-586px"}}>
+        <div style={{marginTop: "-442px"}}>
         <CheckList/>
         </div>
     </LayOut>

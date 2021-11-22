@@ -27,8 +27,7 @@ const Container = styled.div`
 `
 
 const TimelineList = styled.ul`
-  margin: 0;
-  padding: 0;
+
   border-left: 2px solid ;
   list-style: none;
 `

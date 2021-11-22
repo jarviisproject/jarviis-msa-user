@@ -12,8 +12,6 @@ function loginAPI(data: LoginPayload) {
 function joinAPI(data: JoinPayload) {
   return axios.post(`${SERVER}users/join`, JSON.stringify(data), { headers });
 }
-
-// const join = x => axios.post(`${SERVER}/users/join`, JSON.stringify(x), { headers })
 // const exist = x => axios.get(`${SERVER}/users/exist/${x}`)
 // const modify = x => axios.put(`${SERVER}/users/modify/${x}`)//pk로 찾는거
 // const remove = x => axios.delete(`${SERVER}/user/delete/${x}`)

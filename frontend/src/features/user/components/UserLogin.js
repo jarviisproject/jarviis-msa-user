@@ -47,7 +47,6 @@ const defaultValues = {
   email: '',
   password: '',
   username: '',
-  name: '',
   birth: '',
   address: '',
 };

@@ -2,12 +2,15 @@ import { configureStore, createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 //받아오는 데이터
 export interface UserDataPayload {
-  username: string;
+  data:{
+    user:{username: string;
   email: string;
   phone: string;
   address: string;
   password: string;
   birth: string;
+}
+}
 }
 //요청하는 데이터
 export interface LoginPayload {

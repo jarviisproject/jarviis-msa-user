@@ -40,18 +40,27 @@ const Calendar = () => {
   
   return (
     <LayOut>
-    <div className="App" style={{width:"50%", height:"50%",margin:"auto" }}>
+    <div className="App" style={{width:"50%",  margin:"auto", display: "inline-block"}}>
     <FullCalendar
       plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
       initialView="dayGridMonth"
-
-      
       events={events}
       eventColor="red"
       nowIndicator
       dateClick={(e) => console.log(e.dateStr)}
       eventClick={(e) => console.log(e.event.id)}
     />
+    alskfdj;lsakfdj;lakdsjfa;ljfdlakdjf;lsakfdjasldkfja;sldk
+    alskfdj;aldkfja;sldkfja;lskdjflsdkjflsdkjflskdjflskdfs
+    alskfdj;lsakfdj;lakdsjfa;ljfdlakdjf;lsakfdjasldkfja;sldk
+    alskfdj;aldkfja;sldkfja;lskdjflsdkjflsdkjflskdjflskdfs
+
+    alskfdj;lsakfdj;lakdsjfa;ljfdlakdjf;lsakfdjasldkfja;sldk
+    alskfdj;aldkfja;sldkfja;lskdjflsdkjflsdkjflskdjflskdfs
+    alskfdj;lsakfdj;lakdsjfa;ljfdlakdjf;lsakfdjasldkfja;sldk
+    alskfdj;aldkfja;sldkfja;lskdjflsdkjflsdkjflskdjflskdfs
+    alskfdj;lsakfdj;lakdsjfa;ljfdlakdjf;lsakfdjasldkfja;sldk
+    alskfdj;aldkfja;sldkfja;lskdjflsdkjflsdkjflskdjflskdfs
   </div>
   </LayOut>
 );

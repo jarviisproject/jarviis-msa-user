@@ -21,8 +21,7 @@ const HistoryMap = () => {
 
     return (
         <div>
-        <div id="map" style={{width:"600", height:"400px"}}></div>
-       
+        <div id="map" style={{width:"85vw", height:"400px"}}></div>
         </div>
     )
 }

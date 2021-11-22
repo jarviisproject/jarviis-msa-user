@@ -5,21 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e00a79f-9c9a-487b-9364-af3dcff4eaed" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/features/common/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/common/components/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/features/common/components/LayOut.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/common/components/LayOut.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/features/common/components/Navi.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/common/components/Navi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/features/common/containers/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/common/containers/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/features/common/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/common/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/features/common/style/Button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/common/style/Button.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/features/common/style/LayOutStyle.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/common/style/LayOutStyle.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/features/user/reducer/userSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/user/reducer/userSlice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/features/user/components/UserLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/user/components/UserLogin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/features/user/components/UserRegister.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/user/components/UserRegister.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/features/user/module/userHook.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/user/module/userHook.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/features/user/module/userSaga.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/user/module/userSaga.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/features/user/reducer/userSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/user/reducer/userSlice.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

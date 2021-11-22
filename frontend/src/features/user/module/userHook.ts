@@ -15,6 +15,7 @@ export default function useUser() {
   const login = useCallback((data: LoginPayload) => {
     dispatch(loginRequest(data));
   }, []);
+    
   const join = useCallback((data: JoinPayload) => {
     dispatch(joinRequest(data))
   }, [])
