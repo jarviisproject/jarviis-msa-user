@@ -78,7 +78,7 @@ export default function Register3Page() {
                       <Typography className="text-24 font-semibold logo-text" color="inherit">
                       </Typography>
                       <Typography
-                        className="text-16 tracking-widest -mt-8 font-700"
+                        class="text-16 tracking-widest -mt-8 font-700"
                         color="textSecondary"
                       >
                         회원가입

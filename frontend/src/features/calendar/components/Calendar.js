@@ -50,17 +50,7 @@ const Calendar = () => {
       dateClick={(e) => console.log(e.dateStr)}
       eventClick={(e) => console.log(e.event.id)}
     />
-    alskfdj;lsakfdj;lakdsjfa;ljfdlakdjf;lsakfdjasldkfja;sldk
-    alskfdj;aldkfja;sldkfja;lskdjflsdkjflsdkjflskdjflskdfs
-    alskfdj;lsakfdj;lakdsjfa;ljfdlakdjf;lsakfdjasldkfja;sldk
-    alskfdj;aldkfja;sldkfja;lskdjflsdkjflsdkjflskdjflskdfs
 
-    alskfdj;lsakfdj;lakdsjfa;ljfdlakdjf;lsakfdjasldkfja;sldk
-    alskfdj;aldkfja;sldkfja;lskdjflsdkjflsdkjflskdjflskdfs
-    alskfdj;lsakfdj;lakdsjfa;ljfdlakdjf;lsakfdjasldkfja;sldk
-    alskfdj;aldkfja;sldkfja;lskdjflsdkjflsdkjflskdjflskdfs
-    alskfdj;lsakfdj;lakdsjfa;ljfdlakdjf;lsakfdjasldkfja;sldk
-    alskfdj;aldkfja;sldkfja;lskdjflsdkjflsdkjflskdjflskdfs
   </div>
   </LayOut>
 );
