@@ -14,7 +14,7 @@ export default function mypage() {
     return (
         <>
         {localStorage.length > 0 ?
-        <form className="mypage">
+        <form className="mypage" id="jello-horizontal" >
             <h4>{sessionUser}님 안녕하세요!</h4>
             <img className='snoopy-img' src={require("../images/snoopy.jpg").default} /><br />
             <h5>be with you</h5>

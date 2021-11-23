@@ -3,13 +3,14 @@ import {  LayOut } from "..";
 import styled from "styled-components";
 import "features/common/font/font.scss";
 import HomeMain from "features/common/components/HomeMain"
+import "features/common/style/MyPage.scss"
 
 
 
 export default function Home() {
   return (
     <LayOut>
-      <Main>
+      <Main >
         <HomeMain/>
         {/* <img
           className="jarviis-img"

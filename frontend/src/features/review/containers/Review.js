@@ -2,11 +2,9 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import SwipeableViews from 'react-swipeable-views';
 import { useTheme } from '@mui/material/styles';
-import AppBar from '@mui/material/AppBar';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
 import {LayOut} from 'features/common'
 import {Flower,Goal,Graph} from 'features/review'
 import 'features/review/style/reviewStyle.scss'
@@ -23,9 +21,9 @@ function TabPanel(props) {
       {...other}
     >
       {value === index && (
-        <Box sx={{ p: 3 }}>
+        <box sx={{ p: 3 }}>
           <Typography>{children}</Typography>
-        </Box>
+        </box>
       )}
     </div>
   );
@@ -59,12 +57,12 @@ export default function FullWidthTabs() {
   return (
     <LayOut>
         <div className= 'review-container'>
-            <Box sx={{ bgcolor: 'background.paper', width: 1000 }}>
-            <AppBar position="static">
-                <Tabs
+            <box style={{ width: 1500 }}>
+            <div className="reviewText"  position="static">
+                <Tabs 
                 value={value}
                 onChange={handleChange}
-                indicatorColor="secondary"
+                indicatorColor="wheat"
                 textColor="lightcoral"
                 variant="fullWidth"
                 aria-label="full width tabs example"
@@ -73,7 +71,7 @@ export default function FullWidthTabs() {
                 <Tab label="Goal" {...a11yProps(1)} />
                 <Tab label="Review" {...a11yProps(2)} />
                 </Tabs>
-            </AppBar>
+            </div>
             <SwipeableViews
                 axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
                 index={value}
@@ -89,7 +87,7 @@ export default function FullWidthTabs() {
                 <Graph/>
                 </TabPanel>
             </SwipeableViews>
-            </Box>
+            </box>
         </div>
     </LayOut>
   );

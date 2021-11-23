@@ -1,4 +1,4 @@
-.review-container {
+.TaskContainer {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 500px minmax(1fr);
@@ -6,11 +6,5 @@
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   justify-items: center;
-  text-shadow: gray;
 }
-
-.reviewText {
-  font-weight: bolder;
-  font-size: large;
-}
-/*# sourceMappingURL=reviewStyle.css.map */
+/*# sourceMappingURL=Task.css.map */

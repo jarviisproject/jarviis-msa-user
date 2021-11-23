@@ -40,17 +40,16 @@ const Calendar = () => {
   
   return (
     <LayOut>
-    <div className="App" style={{width:"50%",  margin:"auto", display: "inline-block"}}>
+    <div className="App" style={{width:"50%"}}>
     <FullCalendar
       plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
       initialView="dayGridMonth"
       events={events}
-      eventColor="red"
+      eventColor="wheat"
       nowIndicator
       dateClick={(e) => console.log(e.dateStr)}
       eventClick={(e) => console.log(e.event.id)}
     />
-
   </div>
   </LayOut>
 );

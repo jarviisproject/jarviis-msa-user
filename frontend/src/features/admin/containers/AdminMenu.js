@@ -1,6 +1,6 @@
 import React from "react";
 import 'features/admin/style/AdminMenu.scss'
-import { BarChart, BarData, LineChart, LineData, LogChart, PieChart, PieData } from "features/admin";
+import { BarChart, BarData, LineChart, LineData, LogChart, PieChart, PieData} from "features/admin";
 
 
 
@@ -11,19 +11,24 @@ export default function AdminMenu() {
             <div class="ct" id="t2">
                 <div class="ct" id="t3">
                     <div class="ct" id="t4">
-                        <div class="ct" id="t5">
-                            <ul id="menu">
-                                <a href="/admin/admin#t1"><li class="icon fa fa-home fa-2x " id="fa"></li></a>
-                                <a href="/admin/admin#t2"><li class="icon fa fa-question fa-2x" id="fa"></li></a>
-                                <a href="/admin/admin#t3"><li class="icon fa fa-rocket fa-2x" id="fa"></li></a>
-                                <a href="/admin/admin#t4"><li class="icon fa fa-dribbble fa-2x" id="fa"></li></a>
+                            <ul id="menu" >
+                                <a href="/admin#t1"><li class="icon fa fa-home fa-2x " id="fa"></li></a>
+                                <a href="/admin#t2"><li class="icon fa fa-question fa-2x" id="fa"></li></a>
+                                <a href="/admin#t3"><li class="icon fa fa-rocket fa-2x" id="fa"></li></a>
+                                <a href="/admin#t4"><li class="icon fa fa-dribbble fa-2x" id="fa"></li></a>
                     
                             </ul>
-                            <div class="page" id="p1">
-                                <section class="fa fa-home fa-3x"><h1>admin Page</h1></section>
+                            <div class="page" id="p1" style={{overflow: "scroll"}}>
+                                <section id="text-focus-in"style={{marginLeft: "67px" ,textAlign: "center",marginTop: "74px"}}>
+                                <h1>admin Page</h1>
+                                <div class="adminDiv"><BarChart data= {BarData}/><LogChart/></div>
+                                </section>
                             </div>
-                            <div class="page" id="p2">
-                                <section class="icon"><div class="adminDiv"><BarChart data= {BarData}/></div></section>
+                            <div class="page" id="p2" style={{overflow: "scroll"}}>
+                                <h1></h1>
+                                <section class="icon" style={{marginLeft: "67px" ,textAlign: "center",marginTop: "74px"}}>
+                                <div class="adminDiv"><LineChart data= {LineData}/><PieChart data={PieData}/></div>
+                                </section>
                             </div>
                             <div class="page" id="p3">
                                 <section class="icon fa fa-rocket"><span class="title">Rocket</span></section>
@@ -41,7 +46,7 @@ export default function AdminMenu() {
                     </div>
                 </div>
             </div>
-        </div>
+
     )
 }
 

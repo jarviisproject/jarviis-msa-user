@@ -69,7 +69,7 @@ export default function Login3Page() {
   return (
     <LayOut>
      
-    <Root style={{width:"50vh",marginLeft:" 471px",marginTop:"147px"}} >
+    <Root style={{width:"60vh",marginLeft:" 471px",marginTop:"147px"}} >
       <motion.div
         initial={{ opacity: 0, scale: 0.6 }}
         animate={{ opacity: 1, scale: 1 }}

@@ -34,7 +34,7 @@ const App = () => {
         <Route path='/calendar/calendar' element={<Calendar />} />
         <Route path='/task/task' element={<AppTasks />} />
         <Route path='/admin/adminLogin' element={<AdminLogin />} />
-        <Route path='/admin/admin' element={<AdminPage />} />
+        <Route path='/admin' element={<AdminPage />} />
         <Route path='/qna/QnA' element={<QnA />} />
         <Route path='/qna/QnAList' element={<QnaList />} />
       </Routes>

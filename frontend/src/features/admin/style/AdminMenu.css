@@ -27,11 +27,11 @@ html, body, .page {
 }
 
 #p1 {
-  background: darkslateblue;
+  background: wheat;
 }
 
 #p2 {
-  background: #21c490;
+  background: #DD5E89;
 }
 
 #p3 {
@@ -59,6 +59,13 @@ html, body, .page {
   background: black;
 }
 
+#t2:target #p1 .adminDiv,
+#t3:target #p1 .adminDiv,
+#t4:target #p1 .adminDiv {
+  visibility: hidden;
+}
+
+#t1:target #p1 .icon
 #t2:target #p1 .icon,
 #t3:target #p1 .icon,
 #t4:target #p1 .icon {
@@ -79,6 +86,7 @@ ul .icon:hover {
   line-height: 2;
 }
 
+#t1:target ul .icon,
 #t2:target ul .icon,
 #t3:target ul .icon,
 #t4:target ul .icon {
@@ -90,6 +98,7 @@ ul .icon:hover {
           transition-delay: .25s;
 }
 
+#t1:target #fa,
 #t2:target #fa,
 #t3:target #fa,
 #t4:target #fa,
@@ -180,25 +189,5 @@ ul .icon:hover {
   height: 600px;
   width: 850px;
   text-align: center;
-}
-
-.page#p1 .icon {
-  height: 220px;
-}
-
-.page#p1 .icon {
-  -webkit-transform: translateX(10%) !important;
-          transform: translateX(10%) !important;
-}
-
-#t2:target .page#p2 .icon,
-#t3:target .page#p3 .icon,
-#t4:target .page#p4 .icon {
-  transform: translateX(0) !important;
-  -webkit-transform: translateX(0) !important;
-  -moz-transform: translateX(0) !important;
-  -o-transform: translateX(0) !important;
-  -webkit-transition-delay: 1s;
-          transition-delay: 1s;
 }
 /*# sourceMappingURL=AdminMenu.css.map */

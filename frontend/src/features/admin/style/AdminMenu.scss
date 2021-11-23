@@ -25,8 +25,8 @@ html, body, .page {
   left: 200%;
 }
 
-#p1 { background: darkslateblue; }
-#p2 { background: #21c490; }
+#p1 { background: wheat; }
+#p2 { background: #DD5E89; }
 #p3 { background: gold; }
 #p4 { background: deeppink; }
 
@@ -46,7 +46,12 @@ html, body, .page {
 #t4:target #p1{
   background: black;
 }
-
+#t2:target #p1 .adminDiv, 
+#t3:target #p1 .adminDiv,
+#t4:target #p1 .adminDiv{
+  visibility: hidden;
+}
+#t1:target #p1 .icon
 #t2:target #p1 .icon, 
 #t3:target #p1 .icon,
 #t4:target #p1 .icon{
@@ -65,7 +70,7 @@ ul .icon:hover {
 .page .icon .title {
   line-height: 2;
 }
-
+#t1:target ul .icon,
 #t2:target ul .icon,
 #t3:target ul .icon,
 #t4:target ul .icon{
@@ -75,7 +80,7 @@ ul .icon:hover {
   -o-transform: scale(.6);
   transition-delay: .25s;
 }
-
+#t1:target #fa,
 #t2:target #fa,
 #t3:target #fa,
 #t4:target #fa,
@@ -108,9 +113,6 @@ ul .icon:hover {
   -o-transition: all .5s ease-out;
 }
 
-// a {
-//   text-decoration: none;
-// }
 
 .title, .hint {
   display: block;
@@ -170,22 +172,5 @@ ul .icon:hover {
   height: 600px;
   width: 850px;
   text-align: center;
-}
-
-.page#p1 .icon {
-  height: 220px;
-}
-
-.page#p1 .icon {
-  transform: translateX(10%) !important;
-}
-
-#t2:target .page#p2 .icon,
-#t3:target .page#p3 .icon,
-#t4:target .page#p4 .icon{
-  transform: translateX(0) !important;
-  -webkit-transform: translateX(0) !important;
-  -moz-transform: translateX(0) !important;
-  -o-transform: translateX(0) !important;
-  transition-delay: 1s;
+  
 }

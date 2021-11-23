@@ -5,7 +5,7 @@ import 'features/common/style/Footer.scss'
 
 const Footer = () => {
   return (
-    <footer>
+    <footer >
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { delay: 0.3 } }}>

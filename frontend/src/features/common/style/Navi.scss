@@ -5,14 +5,13 @@ a { text-decoration: none; }
 h1,h2,h3,h4,h5,h6 { margin: 0; }
 
 header {
-  background-color: wheat;
+  background-color: RGB(229, 226, 207);
   display: flex;
   font-weight: bold;
-  align-items: center;
   height: 86px;
+  font-family: Arial, Helvetica, sans-serif
   
 }
-
 .gnb {
   flex: 6;
   display: flex;
@@ -77,7 +76,7 @@ header {
   font-family: "Inter", sans-serif;
 
   a {
-    --color: #646b8c;
+    --color: #356859;
 
     position: relative;
 

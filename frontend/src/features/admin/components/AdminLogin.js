@@ -5,13 +5,8 @@ import { Controller, useForm } from 'react-hook-form';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import Checkbox from '@mui/material/Checkbox';
-import Divider from '@mui/material/Divider';
-import FormControl from '@mui/material/FormControl';
-import FormControlLabel from '@mui/material/FormControlLabel';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
-import { Link } from 'react-router-dom';
 import * as yup from 'yup';
 import _ from '@lodash';
 import { LayOut } from 'features/common';
@@ -63,7 +58,7 @@ export default function AdminLogin() {
 
   return (
     <LayOut>
-      <div className="User-container">
+      <div style={{ marginLeft: "-265px",marginTop: "85px"}} className="User-container" >
     <Root className="flex flex-col flex-auto items-center justify-center flex-shrink-0 p-16 md:p-24">
       <motion.div
         initial={{ opacity: 0, scale: 0.6 }}
@@ -136,7 +131,6 @@ export default function AdminLogin() {
                   />
                 )}
               />
-              
               <Button
                 variant="contained"
                 color="primary"
@@ -144,7 +138,7 @@ export default function AdminLogin() {
                 aria-label="LOGIN"
                 disabled={_.isEmpty(dirtyFields) || !isValid}
                 type="button" 
-                onClick={() => window.location.href='/admin/admin'}
+                onClick={() => window.location.href='/admin'}
               >
                 Login
               </Button>

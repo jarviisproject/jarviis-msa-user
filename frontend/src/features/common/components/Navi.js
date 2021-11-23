@@ -6,8 +6,8 @@ export default function Navigation() {
   const sessionUser = localStorage.getItem("sessionUser")
   return (
     <div class="gnb">
-      <div>
-      <ul>
+      <div text-shadow-pop-right>
+      <ul >
         <li><Link to="/home"><span>Home</span></Link></li>
         {localStorage.length > 0 ?<>
         <li><Link to="/diary/diary" ><span>다이어리</span></Link></li>

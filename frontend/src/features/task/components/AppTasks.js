@@ -47,6 +47,7 @@ class TodoExample extends React.Component {
   render() {
     return (
       <LayOut>
+        <div className="TaskContainer">
       <form onSubmit={this.add} autoComplete="off">
         <div className="col-12 mb-2">
           <TransitionGroup {...this.groupProps}>
@@ -98,6 +99,7 @@ class TodoExample extends React.Component {
           </small>
         </div>
       </form>
+      </div>
       </LayOut>
     );
   }
