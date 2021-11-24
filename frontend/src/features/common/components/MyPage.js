@@ -16,7 +16,7 @@ export default function mypage() {
         {localStorage.length > 0 ?
         <form className="mypage" id="jello-horizontal" >
             <h4>{sessionUser}님 안녕하세요!</h4>
-            <img className='snoopy-img' src={require("../images/snoopy.jpg").default} /><br />
+            <img className='snoopy-img' src={require("../images/snoopy.png").default} /><br />
             <h5>be with you</h5>
             <div>
             <Link className="arrow-btn" to="/qna/QnaList">QnA</Link><br />
