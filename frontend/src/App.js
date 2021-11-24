@@ -7,7 +7,7 @@ import {
   UserRegister,
 } from "features/user";
 import { Route, Routes } from "react-router-dom"; //21-11-06 v6로 버전업이후 switch -> routes / component -> element= {<Home/>}/>
-import { Diary } from "features/diary";
+import { Diary} from "features/diary";
 import { Review } from "features/review";
 import { History } from "features/history";
 import { About } from "features/todo";

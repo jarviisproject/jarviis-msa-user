@@ -74,10 +74,10 @@ export default function Login3Page() {
         initial={{ opacity: 0, scale: 0.6 }}
         animate={{ opacity: 1, scale: 1 }}
       >
-        <Card
+        <Card 
           square
         >
-          <CardContent>
+          <CardContent style={{marginBottom: "151px"}}>
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1, transition: { delay: 0.2 } }}
