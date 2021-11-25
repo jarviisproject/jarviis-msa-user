@@ -3,7 +3,7 @@ import React from "react";
 
 const TeamMemberOneSingle = ({ data, spaceBottomClass }) => {
   return (
-    <div className="col-lg-3 col-md-6 col-sm-6">
+    <div>
       <div
         className={`team-wrapper ${spaceBottomClass ? spaceBottomClass : ""}`}
       >

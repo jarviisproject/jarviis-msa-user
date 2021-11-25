@@ -218,6 +218,7 @@ export default function Register3Page() {
                       />
                     )}
                   />
+                    <CheckList/>
                     <Button style={{'margin-top' : '60px'}}
                     variant="contained"
                     color="primary"
@@ -238,7 +239,9 @@ export default function Register3Page() {
                 <Link className="font-normal" to="/users/Login">
                   Login
                 </Link>
+              
               </div>
+              
             </Card>
 
 
@@ -254,13 +257,14 @@ export default function Register3Page() {
                   animate={{ opacity: 1, transition: { delay: 0.3 } }}
                 >
                 </motion.div>
+                
               </div>
             </div>
           </motion.div>
         </div>
-        <div style={{marginTop: "-442px"}}>
+        {/* <div style={{marginTop: "-442px"}}>
         <CheckList/>
-        </div>
+        </div> */}
     </LayOut>
   );
 }

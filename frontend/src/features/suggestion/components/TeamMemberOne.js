@@ -10,7 +10,6 @@ const TeamMemberOne = ({ spaceTopClass, spaceBottomClass }) => {
         spaceBottomClass ? spaceBottomClass : ""
       }`}
     >
-      <div className="container">
         {/* section title */}
         {/* <SectionTitleTwo
           titleText="Team Members"
@@ -19,7 +18,7 @@ const TeamMemberOne = ({ spaceTopClass, spaceBottomClass }) => {
           spaceClass="mb-60"
         /> */}
 
-        <div className="row">
+        <div className="">
           {teamMemberData &&
             teamMemberData.map((single, key) => {
               return (
@@ -32,7 +31,7 @@ const TeamMemberOne = ({ spaceTopClass, spaceBottomClass }) => {
             })}
         </div>
       </div>
-    </div>
+ 
   );
 };
 

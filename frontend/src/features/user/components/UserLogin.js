@@ -69,7 +69,7 @@ export default function Login3Page() {
   return (
     <LayOut>
      
-    <Root style={{width:"60vh",marginLeft:" 471px",marginTop:"147px"}} >
+    <Root style={{width:"60vh",marginLeft:" 434px",marginTop:"-100px;", }} >
       <motion.div
         initial={{ opacity: 0, scale: 0.6 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -77,7 +77,7 @@ export default function Login3Page() {
         <Card 
           square
         >
-          <CardContent style={{marginBottom: "151px"}}>
+          <CardContent style={{marginBottom: "140px"}}>
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1, transition: { delay: 0.2 } }}
@@ -86,15 +86,15 @@ export default function Login3Page() {
                 <img className='login-img'src={require("features/user/images/pencil.png").default}  />
                 <div/>
                 <div>
-                  <Typography
+                  <div
                   >
                     로그인
-                  </Typography>
+                  </div>
                 </div>
               </div>
             </motion.div>
 
-            <form
+            <form style={{margin:"10px"}}
             
               name="loginForm"
               noValidate
@@ -118,6 +118,7 @@ export default function Login3Page() {
                   />
                 )}
               />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
               <Controller
                 name="password"
@@ -136,13 +137,8 @@ export default function Login3Page() {
                   />
                 )}
               />
-
-              <div>
-                <Link className="font-normal" to="/users/removePwd">
-                  Forgot Password?
-                </Link>
-              </div>
-
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               <br/>
               <Button
                 variant="contained"
                 color="primary"
@@ -152,19 +148,32 @@ export default function Login3Page() {
               >
                 Login
               </Button>
+            
+              <div>
+                <Link className="font-normal" to="/users/removePwd">
+                  Forgot Password?
+                </Link>
+              </div>
+             
             </form>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <br/>
 
             <div>
               <Divider className="w-32" />
               <span style={{font:"bolder"}}>OR</span>
               <Divider className="w-32" />
             </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <br/>
 
             <Button variant="outlined" color="primary" size="small" className="w-192 mb-8">
               Log in with KaKao
             </Button>
 
           </CardContent>
+          <img style={{width: "343px", marginLeft:"138px",marginTop: "-150px"}}
+                src={require("features/user/images/상어.gif").default}/>
 
           <div className="flex flex-col items-center justify-center pb-32">
             <span className="font-normal">Don't have an account?</span>

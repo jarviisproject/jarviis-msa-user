@@ -6,11 +6,11 @@ const headers = {
 }
 
 const remove = x => axios.delete(`${SERVER}/task/remove/${x}`)
-const add = x => axios.post(`${SERVER}/task/add`,JSON.stringify(x),{headers})
+const create = x => axios.post(`${SERVER}/task/create`,JSON.stringify(x),{headers})
 const modify = x => axios.put(`${SERVER}/task/modify/${x}`)
 
 export default {
     remove,
-    add,
+    create,
     modify
 }

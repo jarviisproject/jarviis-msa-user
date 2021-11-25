@@ -1,21 +1,17 @@
 import React, { memo, useState } from 'react';
 import styled, { keyframes } from 'styled-components';
-import TimelineAdd from './TimelineAdd';
-import TimelineLog from './TimelineLog';
 import TimelineModify from './TimelineModify';
 // 참고한 블로그 : https://code-masterjung.tistory.com/99
 
-export default function Timeline() {
+export default function TimelineLog() {
   return (
-    <Container>
-      <TimelineList>
-        <TimelineItemContainer>
-          <TimelineAdd/>
-          {/* <TimelineLog/>를 for문으로 돌려서 뽑아야할것같슘댱 */}
-          <TimelineLog/>
-        </TimelineItemContainer>
-      </TimelineList>
-    </Container>
+    <TimelineItem>
+            <Date>2021년 1월 2일 //날씨띄우기//</Date> 
+            <Title>이동 정보</Title>
+            <Contents>
+              <TimelineModify/>
+            </Contents>
+    </TimelineItem>
   );
 };
 

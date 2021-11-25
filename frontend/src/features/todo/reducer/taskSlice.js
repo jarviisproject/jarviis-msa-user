@@ -2,8 +2,8 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { taskAPI } from "features/task";
 
 
-const ADD = async (x) => {
-    const res = await taskAPI.add(x)
+const CREATE = async (x) => {
+    const res = await taskAPI.create(x)
     return res.data
 }
 const REMOVE = async (X) => {
@@ -35,7 +35,7 @@ export const taskSlice = createSlice({
             window.localStorage.clear();
             window.location.href = " "
         },
-        [add.fulfilled]: (state, {meta, payload}) => {
+        [create.fulfilled]: (state, {meta, payload}) => {
             state.taskState = payload
             window.localStorage.setItem('sessionTask', JSON.stringify(payload))
         }

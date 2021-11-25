@@ -19,7 +19,9 @@ const LayOut = (props) => {
         <div class="header"><Header/></div>
         <div class="menu"><MyPage/></div>
         <div class="main">{props.children}</div>
-        <div class="item1"><a class="gradient-btn" href="#">챗봇자리</a></div>
+        <div class="item1"><img class="pulsate-bck"
+                                            style={{marginLeft: "159px", width: '30%', cursor: "pointer" }}
+                                            src={require("features/common/images/chatbot.png").default} /></div>
         <div class="footer"><Footer/></div>
       </div>
     </div>

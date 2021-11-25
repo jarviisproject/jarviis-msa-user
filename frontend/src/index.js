@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import {Provider} from 'react-redux'
-import 'features/todo/style/style.scss'
+import 'features/suggestion/style/style.scss'
 //리덕스와 미들웨어 적용을 위해 필요한 모듈 불러오기
 import {createStore, applyMiddleware} from "redux";
 import rootReducer from "./features/user/module/index";

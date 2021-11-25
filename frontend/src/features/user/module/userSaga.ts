@@ -13,6 +13,7 @@ import {
 } from "features/user/reducer/userSlice";
 import { userAPI  } from "features/user";
 
+
 function* join( action: PayloadAction<JoinPayload>){
   try{
     alert("왔니?")
@@ -24,11 +25,13 @@ function* join( action: PayloadAction<JoinPayload>){
     yield put(joinSuccess(result));
     window.location.href = 'users/login'
   } catch (error: any){
+    alert("아이디오류")
     yield put(joinFailure(error));
   }
 }
 
 function* login(action: PayloadAction<LoginPayload>) {
+  
   try {
     // alert("보냈지롱")
     // fork는 비동기 call은 동기
@@ -41,11 +44,11 @@ function* login(action: PayloadAction<LoginPayload>) {
       // alert("보냈지롱2")
     //요청 성공시
     yield put(loginSuccess(result));
-    alert(JSON.stringify(result.data.user.username))
+    // alert(JSON.stringify(result.data.user.username))
     window.localStorage.setItem('sessionUser', JSON.stringify(result.data.user.username))
     window.location.href= "/home"
   } catch (error: any) {
-    // 요청 실패시
+    alert("아이디 혹은 비밀번호가 틀렸습니다!")
     yield put(loginFailure(error));
   }
 }

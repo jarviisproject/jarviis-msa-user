@@ -10,70 +10,112 @@ import { LayOut } from 'features/common'
 import 'features/diary/style/Diary.scss'
 import { DatePicker } from '@mui/lab';
 import Test from "./Test";
-import { margin } from "@mui/system";
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableCell from '@mui/material/TableCell';
+import TableContainer from '@mui/material/TableContainer';
+import TableHead from '@mui/material/TableHead';
+import TableRow from '@mui/material/TableRow';
 
-export default function Diary() {
+
+
+export default function DiaryTest() {
     const [test, setTest] = useState(new Date())
     const today = new Date()
     const dateToString = (day) => day.toISOString().substring(0, 10)
-    return (
-        <LayOut>
-            <div class="diary_wrapper">
-                <div class="diary_container">
-                    <div style={{ borderCollapse: "collapse" }}>
-                        <LocalizationProvider dateAdapter={AdapterDateFns}>
-                            <DatePicker
-                                views={['day']}
-                                label="날짜 이동"
-                                value={test}
-                                maxDate={today}
-                                onChange={(newValue) => {
-                                    setTest(newValue);
-                                }}
-                                renderInput={(params) => <TextField {...params} helperText={null} />}
-                            />
-                        </LocalizationProvider>
-                    </div>
-                    <Div>
-                    <img       style={{ width: '15%', cursor: "pointer", marginLeft:"-106px" }}
-                                            src={require("features/diary/images/today.png").default} onClick={() => setTest(today)} />
-                        <table border='1px' style={{ border: "wheat" }}>
-                            <TR>
-                                <td><img class="wobble-hor-bottom" style={{ width: '20%', cursor: "pointer" }} src={require("features/diary/images/fingerl.png").default} onClick={() => setTest(new Date(test.setDate(test.getDate() - 1)))} /></td>
-                                <td style={{ width: 'inherit' }} ><DiarySmallText>{test.toLocaleString('ko-KR', {
+    return (<LayOut>
+      <div class="diary_wrapper">
+        <div class="diary_container">
+            
+            <Div>
+            
+    <TableContainer >
+      <Table sx={{ minWidth: 650 }} aria-label="simple table">
+        <TableHead>
+        <TableRow>
+        
+
+        </TableRow>
+          
+        </TableHead>
+        <TableBody>
+        <TableRow>
+            <TableCell align="center" style={{ width: '15%', height:'10px'}}>
+                <img class="wobble-hor-bottom" style={{ width: '80px', cursor: "pointer" }} 
+                src={require("features/diary/images/fingerl.png").default} 
+                onClick={() => setTest(new Date(test.setDate(test.getDate() - 1)))} />
+            </TableCell>
+            <TableCell style={{textAlign:'center', width:'20%'}}>
+        <div style={{ borderCollapse: "collapse" }}>
+                <LocalizationProvider dateAdapter={AdapterDateFns}>
+                    <DatePicker
+                        views={['day']}
+                        label="날짜 이동"
+                        value={test}
+                        maxDate={today}
+                        onChange={(newValue) => { setTest(newValue);}}
+                    renderInput={(params) => <TextField {...params} helperText={null} />}
+                />
+                </LocalizationProvider>
+        </div>
+        </TableCell>
+        
+            <TableCell align="center" style={{width:'30%'}}>
+                <DiarySmallText>
+                    {test.toLocaleString('ko-KR', {
                                     year: 'numeric',
                                     month: 'long',
                                     day: 'numeric',
                                     weekday: 'long'
-                                })}</DiarySmallText></td>
-                                <td ><DiarySmallText>맑음</DiarySmallText><img style={{ width: "100px" }} src={sunny} /></td>
-                                <td >{test.toISOString().substring(0, 10) < today.toISOString().substring(0, 10)}
-                                    {dateToString(test) < dateToString(today)
-                                        ? <><img class="wobble-hor-bottom"
-                                            style={{ width: '20%', cursor: "pointer", visibility: "visible" }}
-                                            src={require("features/diary/images/fingerr.png").default}
-                                            onClick={() => setTest(new Date(test.setDate(test.getDate() + 1)))} />
-                                        </>
-                                        : <img class="wobble-hor-bottom"
-                                            style={{ width: '20%', cursor: "pointer", visibility: "hidden" }}
-                                            src={require("features/diary/images/fingerr.png").default} />}
-
-                                </td>
-                            </TR>
-                            <tr>
-                                <td colSpan='4'><DiarySmallText>제목 : 안주현의 그림 일기</DiarySmallText></td>
-                            </tr>
-                            <tr>
-                                <td colSpan='4'><img class='diary-img' src={diary} /></td>
-                            </tr>
-                        </table>
-                        <div>
-                            <Test />
-                        </div>
-                    </Div>
-                </div>
-            </div>
-        </LayOut>)
+                                })}
+                </DiarySmallText>
+            </TableCell>
+            <TableCell style={{textAlign:'center', width:'15%'}}>
+                <img style={{ width: '200px', cursor: "pointer" }}
+                src={require("features/diary/images/today.png").default} onClick={() => setTest(today)} />
+        </TableCell>
+            <TableCell align="center">
+                <DiarySmallText>맑음</DiarySmallText>
+                <img style={{ width: "100px" }} src={sunny} />
+                </TableCell>
+            <TableCell align="center" style={{ width: '15%'}}>
+                {test.toISOString().substring(0, 10) < today.toISOString().substring(0, 10)}
+                {dateToString(test) < dateToString(today)
+                ? <><img class="wobble-hor-bottom"
+                style={{ width: '80px', cursor: "pointer", visibility: "visible" }}
+                    src={require("features/diary/images/fingerr.png").default}
+                    onClick={() => setTest(new Date(test.setDate(test.getDate() + 1)))} />
+                </>
+                : <img class="wobble-hor-bottom"
+                    style={{ width: '20%', cursor: "pointer", visibility: "hidden" }}
+                    src={require("features/diary/images/fingerr.png").default} />}
+            </TableCell>
+          </TableRow>
+            <TableRow 
+              sx={{ border: 0, textAlign:'center'}}
+            >
+              <TableCell component="td" colSpan='6' style={{textAlign:'center'}}>
+              <DiarySmallText>제목 : 안주현의 그림 일기</DiarySmallText>
+              </TableCell>
+            </TableRow>
+            <TableRow sx={{border: 0}}>
+              <TableCell component="td" colSpan='6' style={{textAlign:'center'}}>
+              <DiarySmallText><img class='diary-img' src={diary} /></DiarySmallText>
+              </TableCell>            
+            </TableRow>
+            <TableRow sx={{border: 0}}>
+              <TableCell component="td" colSpan='6' style={{textAlign:'center'}}>
+              <Test/>
+              </TableCell>            
+            </TableRow>
+        </TableBody>
+      </Table>
+    </TableContainer>
+    {/* <Test/> */}
+    </Div>
+    </div>
+    </div>
+    </LayOut>);
 }
 
 const DiaryText = styled.div`
