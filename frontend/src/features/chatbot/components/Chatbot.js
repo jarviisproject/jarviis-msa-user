@@ -111,7 +111,6 @@ export default function Chatbot() {
                 id="chatbot"
                 style={{
                     display: "none",
-                    float:"left"
                 }}>
                 
             <div className={clsx('flex flex-col relative')}>
