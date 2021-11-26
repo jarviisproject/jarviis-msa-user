@@ -12,7 +12,6 @@ import { Link } from 'react-router-dom';
 import * as yup from 'yup';
 import _ from '@lodash';
 import { LayOut } from 'features/common'
-import "features/common/font/font.scss"
 import 'features/user/style/UserLayout.scss'
 import "features/user/style/UserRegister.scss"
 import { CheckList } from '..';
@@ -110,6 +109,7 @@ export default function Register3Page() {
                       />
                     )}
                   />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
                   <Controller
@@ -132,6 +132,7 @@ export default function Register3Page() {
                   />
                   <button onClick={() => dispatch(
                     exist(document.getElementById('email').value))}>중복체크</button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
                   <Controller
                     name="phone"
@@ -150,6 +151,7 @@ export default function Register3Page() {
                       />
                     )}
                   />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
                   <Controller
                     name="birth"
@@ -168,6 +170,7 @@ export default function Register3Page() {
                       />
                     )}
                   />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   <Controller
                     name="address"
                     control={control}
@@ -184,6 +187,7 @@ export default function Register3Page() {
                       />
                     )}
                   />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   <Controller
                     name="password"
                     control={control}
@@ -201,6 +205,7 @@ export default function Register3Page() {
                       />
                     )}
                   />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   <Controller
                     name="passwordConfirm"
                     control={control}
@@ -218,6 +223,7 @@ export default function Register3Page() {
                       />
                     )}
                   />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <CheckList/>
                     <Button style={{'margin-top' : '60px'}}
                     variant="contained"
@@ -235,9 +241,9 @@ export default function Register3Page() {
 
 
               <div className="flex flex-col items-center justify-center pb-32">
-                <span className="font-normal">Already have an account?</span>
-                <Link className="font-normal" to="/users/Login">
-                  Login
+                <span className="font-normal">이미 회원이신가요?</span>
+                <Link className="font-normal" to="/users/Login">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  로그인하기
                 </Link>
               
               </div>

@@ -68,7 +68,6 @@ export default function Login3Page() {
 
   return (
     <LayOut>
-     
     <Root style={{width:"60vh",marginLeft:" 434px",marginTop:"-100px;", }} >
       <motion.div
         initial={{ opacity: 0, scale: 0.6 }}
@@ -176,9 +175,9 @@ export default function Login3Page() {
                 src={require("features/user/images/상어.gif").default}/>
 
           <div className="flex flex-col items-center justify-center pb-32">
-            <span className="font-normal">Don't have an account?</span>
+            <span className="font-normal">회원이 아니신가요?</span>&nbsp;&nbsp;
             <Link className="font-normal" to="/users/Register">
-              Create an account
+              회원가입하기
             </Link>
           </div>
         </Card>

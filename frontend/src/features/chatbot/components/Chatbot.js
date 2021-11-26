@@ -104,7 +104,7 @@ export default function Chatbot() {
     const chatRef = useRef({});
     return (
         <>
-            <button onClick={() => some()}> <img class="pulsate-bck" style={{ marginLeft: "159px", width: '30%', cursor: "pointer" }}
+            <button onClick={() => some()}> <img class="pulsate-bck" style={{ display:"fixed",marginLeft: "159px", width: '30%', cursor: "pointer" }}
                 src={require("features/common/images/chatbot.png").default} /></button>
             <div
                 className="chatbotTxT"

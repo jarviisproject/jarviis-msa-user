@@ -1,9 +1,13 @@
-.checkbox[type=checkbox], .checkbox[type=radio] {display:none;}
+.checkbox[type=checkbox], .checkbox[type=radio] {display:none;} 
 label.input-label {
   display: inline-block;
   font-size: 13px;
   cursor: pointer;
   }
+.wrap{
+  border: dotted;
+  border-color: burlywood;
+}
 label.input-label::before {
   display: inline-block;
   margin:0 20px;
