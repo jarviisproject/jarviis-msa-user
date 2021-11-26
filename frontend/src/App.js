@@ -15,6 +15,7 @@ import { Calendar } from "features/calendar";
 import { AdminLogin, AdminPage } from "features/admin";
 import { AppTasks } from "features/todo";
 import { QnA, QnaList } from "features/qna";
+import { Chatbot } from "features/chatbot";
 //Attempted import error: 'Action' is not exported from 'history'. histroy 버전 5로 업.
 //yarn add craco-alias @craco/craco
 
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/users/login" element={<UserLogin />} />
+        <Route path="/chatbot/chatbot" element={<Chatbot />} />
         {/* <Route path='/users/removePwd' element={<ForgotPassword/>}/> */}
         <Route path='/users/join' element={<UserRegister />} />
         <Route path='/diary/diary' element={<Diary />} />
