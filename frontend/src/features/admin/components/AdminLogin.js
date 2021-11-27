@@ -58,7 +58,7 @@ export default function AdminLogin() {
 
   return (
     <LayOut>
-      <div style={{ marginLeft: "-265px",marginTop: "85px"}} className="User-container" >
+      <div style={{ marginLeft: "419px",marginTop: "85px" ,height: "541px"}} className="User-container" >
     <Root className="flex flex-col flex-auto items-center justify-center flex-shrink-0 p-16 md:p-24">
       <motion.div
         initial={{ opacity: 0, scale: 0.6 }}

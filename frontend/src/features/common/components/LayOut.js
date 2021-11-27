@@ -14,6 +14,7 @@ import { Chatbot } from 'features/chatbot';
 //}));
 
 const LayOut = (props) => {
+  const sessionUser = localStorage.getItem("sessionUser")
 
   return (
     <div class="wrapper">
@@ -21,7 +22,7 @@ const LayOut = (props) => {
         <div class="header"><Header /></div>
         <div class="menu"><MyPage /></div>
         <div class="main">{props.children}</div>
-        <div class="item1"><Chatbot/></div>
+        {localStorage.length > 0 ?<div class="item1"><Chatbot/></div>:<></>}
           <div class="footer"><Footer /></div>
     
       </div>
