@@ -8,7 +8,7 @@ export default function AppTasks() {
 
  
   return (
-    <LayOut>
+
      <div className="todoapp stack-large">
       <h1>오늘 할일</h1>
       <form>
@@ -24,7 +24,7 @@ export default function AppTasks() {
           name="text"
           autoComplete="off"
         />
-        <button type="submit" className="btn btn__primary btn__lg">
+        <button style={{marginLeft:"20px"}} type="submit" className="btn btn__primary btn__lg">
           Add
         </button>
       </form>
@@ -79,7 +79,7 @@ export default function AppTasks() {
         </li>
       </ul>
     </div>
-    </LayOut>
+
 
   );
 }

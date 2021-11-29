@@ -10,14 +10,7 @@ const TeamMemberOne = ({ spaceTopClass, spaceBottomClass }) => {
         spaceBottomClass ? spaceBottomClass : ""
       }`}
     >
-        {/* section title */}
-        {/* <SectionTitleTwo
-          titleText="Team Members"
-          subTitleText="Lorem ipsum dolor sit amet conse ctetu."
-          positionClass="text-center"
-          spaceClass="mb-60"
-        /> */}
-
+     
         <div className="">
           {teamMemberData &&
             teamMemberData.map((single, key) => {

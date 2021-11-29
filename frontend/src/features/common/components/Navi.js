@@ -13,8 +13,7 @@ export default function Navigation() {
         <li><Link to="/diary/diary" ><span>다이어리</span></Link></li>
         <li><Link to="/review/review"><span>리뷰</span></Link></li>
         <li><Link to="/history/history"><span>히스토리</span></Link></li>
-        <li><Link to="/suggestion/about" ><span>추천</span></Link></li>
-        <li><Link to="/todo/task" ><span>할일 목록</span></Link></li>
+        <li><Link to="/suggestion/about" ><span>목록</span></Link></li>
         <li><Link to="/calendar/calendar" ><span>달력</span></Link></li></>
         :<>
         <li><Link to="/users/login"><span>로그인</span></Link></li>

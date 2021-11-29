@@ -5,10 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e00a79f-9c9a-487b-9364-af3dcff4eaed" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/features/calendar/components/Calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/calendar/components/Calendar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/features/common/components/MyPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/common/components/MyPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/features/common/components/Navi.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/common/components/Navi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/features/qna/components/QnA.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/features/qna/components/QnaLayout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/features/qna/components/QnaList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/features/qna/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/features/qna/reducer/qnaAPI.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/features/qna/style/QnA.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/features/qna/style/QnA.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/features/qna/style/QnA.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/features/qna/style/QnaLayout.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/features/qna/style/QnaLayout.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/features/qna/style/QnaLayout.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/features/suggestion/components/TeamMemberOne.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/suggestion/components/TeamMemberOne.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/features/suggestion/components/TeamMemberOneSingle.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/suggestion/components/TeamMemberOneSingle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/features/suggestion/containers/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/suggestion/containers/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/features/suggestion/data/team-member-one.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/suggestion/data/team-member-one.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/features/suggestion/style/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/suggestion/style/about.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/features/suggestion/style/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/suggestion/style/variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/features/todo/components/AppTasks.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/todo/components/AppTasks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/features/todo/style/Task.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/todo/style/Task.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/features/user/components/UserLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/user/components/UserLogin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/features/user/components/UserRegister.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/user/components/UserRegister.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/features/user/module/userHook.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/user/module/userHook.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/features/user/module/userSaga.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/user/module/userSaga.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/features/user/reducer/userSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/features/user/reducer/userSlice.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

@@ -85,10 +85,9 @@ export default function Login3Page() {
                 <img className='login-img'src={require("features/user/images/pencil.png").default}  />
                 <div/>
                 <div>
-                  <div
-                  >
-                    로그인
-                  </div>
+                  <span>
+                    Login
+                  </span>
                 </div>
               </div>
             </motion.div>

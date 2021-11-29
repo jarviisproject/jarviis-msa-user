@@ -29,7 +29,7 @@ const Calendar = () => {
       color: "#b266ff",
       textColor: "black"
     },
-    { id: 3, title: 'ㅇㅇ시험 접수 기간', start: '2021-10-31', end: '2021-11-04' },
+    { id: 3, title: '기사시험 접수 기간', start: '2021-11-29', end: '2021-12-24' },
     {
       id: 4,
       title: '강남역 미팅',
@@ -40,7 +40,7 @@ const Calendar = () => {
   
   return (
     <LayOut>
-    <div className="App" style={{width:"50%"}}>
+    <div className="App" style={{width:"1000px", marginLeft:"262px"}}>
     <FullCalendar
       plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
       initialView="dayGridMonth"

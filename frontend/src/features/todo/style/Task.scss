@@ -115,9 +115,9 @@ input[type="text"] {
 .todoapp {
   padding: 1rem;
   position: relative;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2.5rem 5rem 0 rgba(0, 0, 0, 0.1);
-  margin-left: 146px;
-  width: 1175px;
+  // box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2.5rem 5rem 0 rgba(0, 0, 0, 0.1);
+  margin-left: 472px;
+  width: 1079px;
   margin-right: 100px;
 }
 
@@ -153,11 +153,12 @@ input[type="text"] {
 }
 [class*="__lg"] {
   display: inline-block;
-  width: 95%;
+  width: 88%;
   font-size: 1.9rem;
 }
 [class*="__lg"]:not(:last-child) {
   margin-bottom: 1rem;
+  
 }
 
 

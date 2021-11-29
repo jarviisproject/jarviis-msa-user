@@ -14,7 +14,7 @@ const TeamMemberOneSingle = ({ data, spaceBottomClass }) => {
             className="img-fluid"
           />
           <div className="team-action">
-          <h4>배너</h4>  
+          <h4>할까 말까</h4>  
             <a
               className="check"
               href={data.fbLink}
@@ -33,9 +33,9 @@ const TeamMemberOneSingle = ({ data, spaceBottomClass }) => {
             </a>
           </div>
         </div>
-        <div className="team-content text-center">
+        <div className="team-content">
           <h4>{data.name}</h4>
-          <span>{data.position} </span>
+          <p>{data.position} </p>
         </div>
       </div>
     </div>

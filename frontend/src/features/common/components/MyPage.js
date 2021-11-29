@@ -19,7 +19,7 @@ export default function mypage() {
             <img className='snoopy-img' src={require("../images/snoopy.png").default} /><br />
             <h5>be with you</h5>
             <div>
-            <Link className="arrow-btn" to="/qna/QnaList">QnA</Link><br />
+            <Link className="arrow-btn" to="/mypage/setting">설정</Link><br />
             <LogOut/>
              </div>
         </form>: <></>}
